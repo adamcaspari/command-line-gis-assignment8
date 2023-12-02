@@ -1,0 +1,4236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5081bb4e1b8fbe96914146931c76235f {
+                    position: relative;
+                    width: 900.0px;
+                    height: 850.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5081bb4e1b8fbe96914146931c76235f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5081bb4e1b8fbe96914146931c76235f = L.map(
+                "map_5081bb4e1b8fbe96914146931c76235f",
+                {
+                    center: [42.4102284, -72.9374832],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fd92e2ceb1b34c65780d8eb6db7ee202 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_fd92e2ceb1b34c65780d8eb6db7ee202.addTo(map_5081bb4e1b8fbe96914146931c76235f);
+    
+            var marker_19ed2b7375891ac10e85e9730c43d8d0 = L.marker(
+                [42.16180917546672, -73.4111438774472],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_d5dc983f7e06f994eeec6356c4959ac8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_19ed2b7375891ac10e85e9730c43d8d0.setIcon(icon_d5dc983f7e06f994eeec6356c4959ac8);
+        
+    
+        var popup_3fa18ddc0e56f6d8fa025dd37b3187ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57b4a02160afbb1f0bf700a0264b8e46 = $(`<div id="html_57b4a02160afbb1f0bf700a0264b8e46" style="width: 100.0%; height: 100.0%;"><b>Name:</b> EGREMONT FREE LIBRARY</div>`)[0];
+                popup_3fa18ddc0e56f6d8fa025dd37b3187ed.setContent(html_57b4a02160afbb1f0bf700a0264b8e46);
+            
+        
+
+        marker_19ed2b7375891ac10e85e9730c43d8d0.bindPopup(popup_3fa18ddc0e56f6d8fa025dd37b3187ed)
+        ;
+
+        
+    
+    
+            marker_19ed2b7375891ac10e85e9730c43d8d0.bindTooltip(
+                `<div>
+                     EGREMONT FREE LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f98908a430cd4e92ed7daedf7349ed6 = L.marker(
+                [42.693036652471456, -73.03769899453624],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_04ad43101f44153e8b6a081279ffc484 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1f98908a430cd4e92ed7daedf7349ed6.setIcon(icon_04ad43101f44153e8b6a081279ffc484);
+        
+    
+        var popup_763b77935110093179049133cd7fc191 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b316b8d18256033b0dc7b5fee63927ff = $(`<div id="html_b316b8d18256033b0dc7b5fee63927ff" style="width: 100.0%; height: 100.0%;"><b>Name:</b> FLORIDA FREE PUBLIC LIBRARY</div>`)[0];
+                popup_763b77935110093179049133cd7fc191.setContent(html_b316b8d18256033b0dc7b5fee63927ff);
+            
+        
+
+        marker_1f98908a430cd4e92ed7daedf7349ed6.bindPopup(popup_763b77935110093179049133cd7fc191)
+        ;
+
+        
+    
+    
+            marker_1f98908a430cd4e92ed7daedf7349ed6.bindTooltip(
+                `<div>
+                     FLORIDA FREE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79ce84e9e8e2593260ee7cea7091552e = L.marker(
+                [42.204098077592384, -72.61254392145221],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_b393f4e54c989ca7916671591e3beb88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_79ce84e9e8e2593260ee7cea7091552e.setIcon(icon_b393f4e54c989ca7916671591e3beb88);
+        
+    
+        var popup_7b7b950a9ad34d4b442ec8aa51a25bca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_107535fa3ae998e4470cfd99eb6303b7 = $(`<div id="html_107535fa3ae998e4470cfd99eb6303b7" style="width: 100.0%; height: 100.0%;"><b>Name:</b> HOLYOKE PUBLIC LIBRARY</div>`)[0];
+                popup_7b7b950a9ad34d4b442ec8aa51a25bca.setContent(html_107535fa3ae998e4470cfd99eb6303b7);
+            
+        
+
+        marker_79ce84e9e8e2593260ee7cea7091552e.bindPopup(popup_7b7b950a9ad34d4b442ec8aa51a25bca)
+        ;
+
+        
+    
+    
+            marker_79ce84e9e8e2593260ee7cea7091552e.bindTooltip(
+                `<div>
+                     HOLYOKE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db19aa85f3507ccb6a5918d321e2c6bf = L.marker(
+                [42.11021974716937, -72.5661978935968],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_edf3e6ee3345e42bd17a0a05d8f409e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_db19aa85f3507ccb6a5918d321e2c6bf.setIcon(icon_edf3e6ee3345e42bd17a0a05d8f409e6);
+        
+    
+        var popup_02b0606fb7e8f6121508dcb390299193 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58e274f926348183c58c99b6c1c42054 = $(`<div id="html_58e274f926348183c58c99b6c1c42054" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MASON SQUARE BRANCH LIBRARY</div>`)[0];
+                popup_02b0606fb7e8f6121508dcb390299193.setContent(html_58e274f926348183c58c99b6c1c42054);
+            
+        
+
+        marker_db19aa85f3507ccb6a5918d321e2c6bf.bindPopup(popup_02b0606fb7e8f6121508dcb390299193)
+        ;
+
+        
+    
+    
+            marker_db19aa85f3507ccb6a5918d321e2c6bf.bindTooltip(
+                `<div>
+                     MASON SQUARE BRANCH LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00560410fea1b0e96c35d0deadeb85e9 = L.marker(
+                [42.69831468335244, -73.10878726623899],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_1df490f189e2065c363779b0327e28f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_00560410fea1b0e96c35d0deadeb85e9.setIcon(icon_1df490f189e2065c363779b0327e28f8);
+        
+    
+        var popup_30cd17e89dffc4005caecf34ada20984 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3a99b5ac7d8d26da91e79a95741a2d4 = $(`<div id="html_c3a99b5ac7d8d26da91e79a95741a2d4" style="width: 100.0%; height: 100.0%;"><b>Name:</b> NORTH ADAMS PUBLIC LIBRARY</div>`)[0];
+                popup_30cd17e89dffc4005caecf34ada20984.setContent(html_c3a99b5ac7d8d26da91e79a95741a2d4);
+            
+        
+
+        marker_00560410fea1b0e96c35d0deadeb85e9.bindPopup(popup_30cd17e89dffc4005caecf34ada20984)
+        ;
+
+        
+    
+    
+            marker_00560410fea1b0e96c35d0deadeb85e9.bindTooltip(
+                `<div>
+                     NORTH ADAMS PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2e547bca935c3bac98b3ac4b76e9265 = L.marker(
+                [42.09387185934432, -73.08542055150713],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_73bdb9918e23b6b19571f20606b0c6d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d2e547bca935c3bac98b3ac4b76e9265.setIcon(icon_73bdb9918e23b6b19571f20606b0c6d4);
+        
+    
+        var popup_6e0efbc237631f63765f35eaf7238864 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3847f86501d9d5678bc2234052b27c4e = $(`<div id="html_3847f86501d9d5678bc2234052b27c4e" style="width: 100.0%; height: 100.0%;"><b>Name:</b> SANDISFIELD FREE PUBLIC LIBRARY</div>`)[0];
+                popup_6e0efbc237631f63765f35eaf7238864.setContent(html_3847f86501d9d5678bc2234052b27c4e);
+            
+        
+
+        marker_d2e547bca935c3bac98b3ac4b76e9265.bindPopup(popup_6e0efbc237631f63765f35eaf7238864)
+        ;
+
+        
+    
+    
+            marker_d2e547bca935c3bac98b3ac4b76e9265.bindTooltip(
+                `<div>
+                     SANDISFIELD FREE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e0b6834e02b6d85cbc556b210c374c5 = L.marker(
+                [42.27620320902213, -72.39983715620039],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_a65a76c2e762a82b5882136d22dd8278 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4e0b6834e02b6d85cbc556b210c374c5.setIcon(icon_a65a76c2e762a82b5882136d22dd8278);
+        
+    
+        var popup_5f845b19d01c874d0954fb2827fd9248 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54d3ab5e97603b589fdbd4ad1042b1eb = $(`<div id="html_54d3ab5e97603b589fdbd4ad1042b1eb" style="width: 100.0%; height: 100.0%;"><b>Name:</b> CLAPP MEMORIAL LIBRARY</div>`)[0];
+                popup_5f845b19d01c874d0954fb2827fd9248.setContent(html_54d3ab5e97603b589fdbd4ad1042b1eb);
+            
+        
+
+        marker_4e0b6834e02b6d85cbc556b210c374c5.bindPopup(popup_5f845b19d01c874d0954fb2827fd9248)
+        ;
+
+        
+    
+    
+            marker_4e0b6834e02b6d85cbc556b210c374c5.bindTooltip(
+                `<div>
+                     CLAPP MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79817522dac23ae175e4412cbfde8249 = L.marker(
+                [42.2599516860992, -72.23977981034376],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_2a5068e5e5e5c2428f84c7565b74c7c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_79817522dac23ae175e4412cbfde8249.setIcon(icon_2a5068e5e5e5c2428f84c7565b74c7c3);
+        
+    
+        var popup_934b5cec3222081f52a8105fb3a45821 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bca75447b4ee6dbd315de9d322cd85e5 = $(`<div id="html_bca75447b4ee6dbd315de9d322cd85e5" style="width: 100.0%; height: 100.0%;"><b>Name:</b> YOUNG MEN'S LIBRARY ASSOCIATION</div>`)[0];
+                popup_934b5cec3222081f52a8105fb3a45821.setContent(html_bca75447b4ee6dbd315de9d322cd85e5);
+            
+        
+
+        marker_79817522dac23ae175e4412cbfde8249.bindPopup(popup_934b5cec3222081f52a8105fb3a45821)
+        ;
+
+        
+    
+    
+            marker_79817522dac23ae175e4412cbfde8249.bindTooltip(
+                `<div>
+                     YOUNG MEN'S LIBRARY ASSOCIATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_edcb70ac9f50be32ca9f726c5e2c7c7a = L.marker(
+                [42.45245941388638, -72.40903193770112],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_f669a49496f782b0833187c14d871c8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_edcb70ac9f50be32ca9f726c5e2c7c7a.setIcon(icon_f669a49496f782b0833187c14d871c8f);
+        
+    
+        var popup_d919f5ff6a4d871745b4da75ae5367e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60d5a9e0030a0e36b3856228ebcf0c5e = $(`<div id="html_60d5a9e0030a0e36b3856228ebcf0c5e" style="width: 100.0%; height: 100.0%;"><b>Name:</b> M. N. SPEAR MEMORIAL LIBRARY</div>`)[0];
+                popup_d919f5ff6a4d871745b4da75ae5367e9.setContent(html_60d5a9e0030a0e36b3856228ebcf0c5e);
+            
+        
+
+        marker_edcb70ac9f50be32ca9f726c5e2c7c7a.bindPopup(popup_d919f5ff6a4d871745b4da75ae5367e9)
+        ;
+
+        
+    
+    
+            marker_edcb70ac9f50be32ca9f726c5e2c7c7a.bindTooltip(
+                `<div>
+                     M. N. SPEAR MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2baa48c90b2a5c21f87928aabe43f7f0 = L.marker(
+                [42.62163130014499, -72.46956868876104],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_8ad1ba43835ce9b71d9300aee3f2c93a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2baa48c90b2a5c21f87928aabe43f7f0.setIcon(icon_8ad1ba43835ce9b71d9300aee3f2c93a);
+        
+    
+        var popup_c26c46c1b155a5d865b8cf4ea0f72cbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23360d30478d3a5aa1dcf29edff941c1 = $(`<div id="html_23360d30478d3a5aa1dcf29edff941c1" style="width: 100.0%; height: 100.0%;"><b>Name:</b> FIELD LIBRARY</div>`)[0];
+                popup_c26c46c1b155a5d865b8cf4ea0f72cbd.setContent(html_23360d30478d3a5aa1dcf29edff941c1);
+            
+        
+
+        marker_2baa48c90b2a5c21f87928aabe43f7f0.bindPopup(popup_c26c46c1b155a5d865b8cf4ea0f72cbd)
+        ;
+
+        
+    
+    
+            marker_2baa48c90b2a5c21f87928aabe43f7f0.bindTooltip(
+                `<div>
+                     FIELD LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9109c55495735e0ca71d4ff316671768 = L.marker(
+                [42.28161966937353, -73.31060164775502],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_d04eac4159f69964626466947012092e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9109c55495735e0ca71d4ff316671768.setIcon(icon_d04eac4159f69964626466947012092e);
+        
+    
+        var popup_46d9ef03e17d6d45b8319181f613107c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_561e73b3bec25a1111d4710e90610ebf = $(`<div id="html_561e73b3bec25a1111d4710e90610ebf" style="width: 100.0%; height: 100.0%;"><b>Name:</b> STOCKBRIDGE LIBRARY ASSOCIATION</div>`)[0];
+                popup_46d9ef03e17d6d45b8319181f613107c.setContent(html_561e73b3bec25a1111d4710e90610ebf);
+            
+        
+
+        marker_9109c55495735e0ca71d4ff316671768.bindPopup(popup_46d9ef03e17d6d45b8319181f613107c)
+        ;
+
+        
+    
+    
+            marker_9109c55495735e0ca71d4ff316671768.bindTooltip(
+                `<div>
+                     STOCKBRIDGE LIBRARY ASSOCIATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b9656eb4d6bad496eb1cf607bcc7f93 = L.marker(
+                [42.11727297210948, -72.61210268100156],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_3e5d5cbbfd0076e6d48bc4a869c20ee6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8b9656eb4d6bad496eb1cf607bcc7f93.setIcon(icon_3e5d5cbbfd0076e6d48bc4a869c20ee6);
+        
+    
+        var popup_074d7f2832ce3e9dedba77dd599689ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90bcc65d74208e47cfc7efb7344f81ba = $(`<div id="html_90bcc65d74208e47cfc7efb7344f81ba" style="width: 100.0%; height: 100.0%;"><b>Name:</b> BRIGHTWOOD BRANCH LIBRARY</div>`)[0];
+                popup_074d7f2832ce3e9dedba77dd599689ee.setContent(html_90bcc65d74208e47cfc7efb7344f81ba);
+            
+        
+
+        marker_8b9656eb4d6bad496eb1cf607bcc7f93.bindPopup(popup_074d7f2832ce3e9dedba77dd599689ee)
+        ;
+
+        
+    
+    
+            marker_8b9656eb4d6bad496eb1cf607bcc7f93.bindTooltip(
+                `<div>
+                     BRIGHTWOOD BRANCH LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_248a52aee9c3aa2a3fa69fbc12919ddc = L.marker(
+                [42.561891286458675, -73.1628374502675],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_5bb59dfff672fee6eb7502cd40650b0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_248a52aee9c3aa2a3fa69fbc12919ddc.setIcon(icon_5bb59dfff672fee6eb7502cd40650b0b);
+        
+    
+        var popup_858de6290b30e53e24e8356e3e8b236a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdbd28af5ec099c8547d355ec84d2b93 = $(`<div id="html_bdbd28af5ec099c8547d355ec84d2b93" style="width: 100.0%; height: 100.0%;"><b>Name:</b> CHESHIRE PUBLIC LIBRARY</div>`)[0];
+                popup_858de6290b30e53e24e8356e3e8b236a.setContent(html_bdbd28af5ec099c8547d355ec84d2b93);
+            
+        
+
+        marker_248a52aee9c3aa2a3fa69fbc12919ddc.bindPopup(popup_858de6290b30e53e24e8356e3e8b236a)
+        ;
+
+        
+    
+    
+            marker_248a52aee9c3aa2a3fa69fbc12919ddc.bindTooltip(
+                `<div>
+                     CHESHIRE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5541a4dedc6b7af8f4a8a27fc5920424 = L.marker(
+                [42.699693862834394, -72.45321699299949],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_3ab31e4a34d68ae49a060424bc14cd58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5541a4dedc6b7af8f4a8a27fc5920424.setIcon(icon_3ab31e4a34d68ae49a060424bc14cd58);
+        
+    
+        var popup_deba89a943f9010c2aaec0317455a2ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_696ce2d77ae09bd0eabb487fb8f34553 = $(`<div id="html_696ce2d77ae09bd0eabb487fb8f34553" style="width: 100.0%; height: 100.0%;"><b>Name:</b> DICKINSON MEMORIAL LIBRARY</div>`)[0];
+                popup_deba89a943f9010c2aaec0317455a2ed.setContent(html_696ce2d77ae09bd0eabb487fb8f34553);
+            
+        
+
+        marker_5541a4dedc6b7af8f4a8a27fc5920424.bindPopup(popup_deba89a943f9010c2aaec0317455a2ed)
+        ;
+
+        
+    
+    
+            marker_5541a4dedc6b7af8f4a8a27fc5920424.bindTooltip(
+                `<div>
+                     DICKINSON MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d07cbc34950c76ef9d7a3f57a7aa42c = L.marker(
+                [42.70086987192698, -72.63027911587488],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_f53ff6c0da1e81bf89e08a9ec53b5127 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5d07cbc34950c76ef9d7a3f57a7aa42c.setIcon(icon_f53ff6c0da1e81bf89e08a9ec53b5127);
+        
+    
+        var popup_e0cbaf8990f1763016b284dd202dab83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3118ac5a89a1794914b2f40455323ba5 = $(`<div id="html_3118ac5a89a1794914b2f40455323ba5" style="width: 100.0%; height: 100.0%;"><b>Name:</b> ROBERTSON MEMORIAL LIBRARY</div>`)[0];
+                popup_e0cbaf8990f1763016b284dd202dab83.setContent(html_3118ac5a89a1794914b2f40455323ba5);
+            
+        
+
+        marker_5d07cbc34950c76ef9d7a3f57a7aa42c.bindPopup(popup_e0cbaf8990f1763016b284dd202dab83)
+        ;
+
+        
+    
+    
+            marker_5d07cbc34950c76ef9d7a3f57a7aa42c.bindTooltip(
+                `<div>
+                     ROBERTSON MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbdc82b56292b399752a9cada95673c7 = L.marker(
+                [42.472883748998015, -73.16957859059893],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_0b9b2f624ed5efab168386de9349f1b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fbdc82b56292b399752a9cada95673c7.setIcon(icon_0b9b2f624ed5efab168386de9349f1b4);
+        
+    
+        var popup_b06559948e5afd4fd506e900f14ffc56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a6bec85e74f0657b43b9e1569a7f3ea = $(`<div id="html_9a6bec85e74f0657b43b9e1569a7f3ea" style="width: 100.0%; height: 100.0%;"><b>Name:</b> DALTON FREE PUBLIC LIBRARY</div>`)[0];
+                popup_b06559948e5afd4fd506e900f14ffc56.setContent(html_9a6bec85e74f0657b43b9e1569a7f3ea);
+            
+        
+
+        marker_fbdc82b56292b399752a9cada95673c7.bindPopup(popup_b06559948e5afd4fd506e900f14ffc56)
+        ;
+
+        
+    
+    
+            marker_fbdc82b56292b399752a9cada95673c7.bindTooltip(
+                `<div>
+                     DALTON FREE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_add7a7f0eab9282e464f7a9833bb7c02 = L.marker(
+                [42.14160943101766, -72.55827548091004],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_ddae738191ebec3b0f91964b3b0ac325 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_add7a7f0eab9282e464f7a9833bb7c02.setIcon(icon_ddae738191ebec3b0f91964b3b0ac325);
+        
+    
+        var popup_417ca27587f54578eb3aeeb9fbf2efa9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_512a3caac8f3c621ec9465720be5b0ed = $(`<div id="html_512a3caac8f3c621ec9465720be5b0ed" style="width: 100.0%; height: 100.0%;"><b>Name:</b> EAST SPRINGFIELD BRANCH LIBRARY</div>`)[0];
+                popup_417ca27587f54578eb3aeeb9fbf2efa9.setContent(html_512a3caac8f3c621ec9465720be5b0ed);
+            
+        
+
+        marker_add7a7f0eab9282e464f7a9833bb7c02.bindPopup(popup_417ca27587f54578eb3aeeb9fbf2efa9)
+        ;
+
+        
+    
+    
+            marker_add7a7f0eab9282e464f7a9833bb7c02.bindTooltip(
+                `<div>
+                     EAST SPRINGFIELD BRANCH LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ad26732aecda51cf91655095f2d3c0b = L.marker(
+                [42.44136491653418, -72.6345196781165],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_d3b0b805bc1e36290e97786a620b4ba0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2ad26732aecda51cf91655095f2d3c0b.setIcon(icon_d3b0b805bc1e36290e97786a620b4ba0);
+        
+    
+        var popup_7ad2b489be88f63d399686d4fb2e1b87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72ab467946cd48eca535a482079391d8 = $(`<div id="html_72ab467946cd48eca535a482079391d8" style="width: 100.0%; height: 100.0%;"><b>Name:</b> S. WHITE DICKINSON MEMORIAL LIBRARY</div>`)[0];
+                popup_7ad2b489be88f63d399686d4fb2e1b87.setContent(html_72ab467946cd48eca535a482079391d8);
+            
+        
+
+        marker_2ad26732aecda51cf91655095f2d3c0b.bindPopup(popup_7ad2b489be88f63d399686d4fb2e1b87)
+        ;
+
+        
+    
+    
+            marker_2ad26732aecda51cf91655095f2d3c0b.bindTooltip(
+                `<div>
+                     S. WHITE DICKINSON MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6577554f3f439d51e2b7df93c3551a30 = L.marker(
+                [42.438136599158405, -73.12399632314258],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_e67d46f080c0bbb8d7c8e46422d0dffa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6577554f3f439d51e2b7df93c3551a30.setIcon(icon_e67d46f080c0bbb8d7c8e46422d0dffa);
+        
+    
+        var popup_048acbb2802d5dabc5ec22112d6818aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb8976889d0842860742e3a84ac78a31 = $(`<div id="html_fb8976889d0842860742e3a84ac78a31" style="width: 100.0%; height: 100.0%;"><b>Name:</b> HINSDALE PUBLIC LIBRARY</div>`)[0];
+                popup_048acbb2802d5dabc5ec22112d6818aa.setContent(html_fb8976889d0842860742e3a84ac78a31);
+            
+        
+
+        marker_6577554f3f439d51e2b7df93c3551a30.bindPopup(popup_048acbb2802d5dabc5ec22112d6818aa)
+        ;
+
+        
+    
+    
+            marker_6577554f3f439d51e2b7df93c3551a30.bindTooltip(
+                `<div>
+                     HINSDALE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d995833919ba836b5029819627821cc = L.marker(
+                [42.24590364649763, -73.204316220176],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_b9e3701e890d6c5c21d1d22d3764c237 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6d995833919ba836b5029819627821cc.setIcon(icon_b9e3701e890d6c5c21d1d22d3764c237);
+        
+    
+        var popup_d9f6bab6e9c664846e33564339e4c266 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f39caff21317ccd91141bef0c2731173 = $(`<div id="html_f39caff21317ccd91141bef0c2731173" style="width: 100.0%; height: 100.0%;"><b>Name:</b> TYRINGHAM FREE PUBLIC LIBRARY</div>`)[0];
+                popup_d9f6bab6e9c664846e33564339e4c266.setContent(html_f39caff21317ccd91141bef0c2731173);
+            
+        
+
+        marker_6d995833919ba836b5029819627821cc.bindPopup(popup_d9f6bab6e9c664846e33564339e4c266)
+        ;
+
+        
+    
+    
+            marker_6d995833919ba836b5029819627821cc.bindTooltip(
+                `<div>
+                     TYRINGHAM FREE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0b05bce208f2b653ac23ba273f3de2a = L.marker(
+                [42.09975735320477, -73.45311008719413],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_fa59ec24a17c239f497d5e6068d219fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f0b05bce208f2b653ac23ba273f3de2a.setIcon(icon_fa59ec24a17c239f497d5e6068d219fe);
+        
+    
+        var popup_f216d116f7d1a54d19bc6115898a2727 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea7a0418a03b083a9bd68d81f151d629 = $(`<div id="html_ea7a0418a03b083a9bd68d81f151d629" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MOUNT WASHINGTON LIBRARY</div>`)[0];
+                popup_f216d116f7d1a54d19bc6115898a2727.setContent(html_ea7a0418a03b083a9bd68d81f151d629);
+            
+        
+
+        marker_f0b05bce208f2b653ac23ba273f3de2a.bindPopup(popup_f216d116f7d1a54d19bc6115898a2727)
+        ;
+
+        
+    
+    
+            marker_f0b05bce208f2b653ac23ba273f3de2a.bindTooltip(
+                `<div>
+                     MOUNT WASHINGTON LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_adda2aaee8aa3a2dec11f6e030030e83 = L.marker(
+                [42.50815044370132, -72.69553617884284],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_fbb560f0eab738beceefd0a35f51f3a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_adda2aaee8aa3a2dec11f6e030030e83.setIcon(icon_fbb560f0eab738beceefd0a35f51f3a4);
+        
+    
+        var popup_4eb0f58b85956140a0fbfdacddbcfae8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49adbfc7fed4b20e7ad330e63ccbd7fd = $(`<div id="html_49adbfc7fed4b20e7ad330e63ccbd7fd" style="width: 100.0%; height: 100.0%;"><b>Name:</b> FIELD MEMORIAL LIBRARY</div>`)[0];
+                popup_4eb0f58b85956140a0fbfdacddbcfae8.setContent(html_49adbfc7fed4b20e7ad330e63ccbd7fd);
+            
+        
+
+        marker_adda2aaee8aa3a2dec11f6e030030e83.bindPopup(popup_4eb0f58b85956140a0fbfdacddbcfae8)
+        ;
+
+        
+    
+    
+            marker_adda2aaee8aa3a2dec11f6e030030e83.bindTooltip(
+                `<div>
+                     FIELD MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44e9b6e78ea6c6ec89f21339ce47d5f6 = L.marker(
+                [42.41022605041259, -72.93749010347355],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_e427fe0ad2a22ff957eebde142073f01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_44e9b6e78ea6c6ec89f21339ce47d5f6.setIcon(icon_e427fe0ad2a22ff957eebde142073f01);
+        
+    
+        var popup_990f622b0eafee657b4e363a3095877c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_585315ef74ac051c11f332058ee89c0c = $(`<div id="html_585315ef74ac051c11f332058ee89c0c" style="width: 100.0%; height: 100.0%;"><b>Name:</b> THE WORTHINGTON LIBRARY</div>`)[0];
+                popup_990f622b0eafee657b4e363a3095877c.setContent(html_585315ef74ac051c11f332058ee89c0c);
+            
+        
+
+        marker_44e9b6e78ea6c6ec89f21339ce47d5f6.bindPopup(popup_990f622b0eafee657b4e363a3095877c)
+        ;
+
+        
+    
+    
+            marker_44e9b6e78ea6c6ec89f21339ce47d5f6.bindTooltip(
+                `<div>
+                     THE WORTHINGTON LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_169fb2d6b269aa085906a10be64767f3 = L.marker(
+                [42.34078245823539, -72.50334529335477],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_cb686a36978290150e4b97ce9f01103c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_169fb2d6b269aa085906a10be64767f3.setIcon(icon_cb686a36978290150e4b97ce9f01103c);
+        
+    
+        var popup_c67431d104ed433a3b9e9f8ae51509b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00b1a122e7fca3d8b22f5ee3412d0c52 = $(`<div id="html_00b1a122e7fca3d8b22f5ee3412d0c52" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MUNSON MEMORIAL LIBRARY</div>`)[0];
+                popup_c67431d104ed433a3b9e9f8ae51509b5.setContent(html_00b1a122e7fca3d8b22f5ee3412d0c52);
+            
+        
+
+        marker_169fb2d6b269aa085906a10be64767f3.bindPopup(popup_c67431d104ed433a3b9e9f8ae51509b5)
+        ;
+
+        
+    
+    
+            marker_169fb2d6b269aa085906a10be64767f3.bindTooltip(
+                `<div>
+                     MUNSON MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_992288da420c72881b6f15600f4ccda9 = L.marker(
+                [42.37625115942534, -72.52090066698479],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_10343bddb860132d5caa721034954a99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_992288da420c72881b6f15600f4ccda9.setIcon(icon_10343bddb860132d5caa721034954a99);
+        
+    
+        var popup_4b8c6fe74b7f9541edfc85955f5737f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48a3aee94b44a415b191caf3827870e7 = $(`<div id="html_48a3aee94b44a415b191caf3827870e7" style="width: 100.0%; height: 100.0%;"><b>Name:</b> JONES LIBRARY</div>`)[0];
+                popup_4b8c6fe74b7f9541edfc85955f5737f5.setContent(html_48a3aee94b44a415b191caf3827870e7);
+            
+        
+
+        marker_992288da420c72881b6f15600f4ccda9.bindPopup(popup_4b8c6fe74b7f9541edfc85955f5737f5)
+        ;
+
+        
+    
+    
+            marker_992288da420c72881b6f15600f4ccda9.bindTooltip(
+                `<div>
+                     JONES LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30f043a0ec1835b26797894ed6618e54 = L.marker(
+                [42.208871953579326, -72.57379020661776],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_025a9065920af8a4e2e3f5dfd1778901 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_30f043a0ec1835b26797894ed6618e54.setIcon(icon_025a9065920af8a4e2e3f5dfd1778901);
+        
+    
+        var popup_374b2a7335a8d145e57186b9f61d12c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fef46d047700f9936d8e21d7c211e226 = $(`<div id="html_fef46d047700f9936d8e21d7c211e226" style="width: 100.0%; height: 100.0%;"><b>Name:</b> FAIRVIEW BRANCH LIBRARY</div>`)[0];
+                popup_374b2a7335a8d145e57186b9f61d12c8.setContent(html_fef46d047700f9936d8e21d7c211e226);
+            
+        
+
+        marker_30f043a0ec1835b26797894ed6618e54.bindPopup(popup_374b2a7335a8d145e57186b9f61d12c8)
+        ;
+
+        
+    
+    
+            marker_30f043a0ec1835b26797894ed6618e54.bindTooltip(
+                `<div>
+                     FAIRVIEW BRANCH LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f2e549d9de75a1f454bebaf9ae5365e9 = L.marker(
+                [42.15898314087742, -72.50377979674032],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_d056435e8d983cb26ceff5c7b9a31675 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f2e549d9de75a1f454bebaf9ae5365e9.setIcon(icon_d056435e8d983cb26ceff5c7b9a31675);
+        
+    
+        var popup_1d4d8047af24bf6e004d26872b8f482c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a13692cc81473a673c7b9ad7fc0a9e0 = $(`<div id="html_4a13692cc81473a673c7b9ad7fc0a9e0" style="width: 100.0%; height: 100.0%;"><b>Name:</b> INDIAN ORCHARD BRANCH LIBRARY</div>`)[0];
+                popup_1d4d8047af24bf6e004d26872b8f482c.setContent(html_4a13692cc81473a673c7b9ad7fc0a9e0);
+            
+        
+
+        marker_f2e549d9de75a1f454bebaf9ae5365e9.bindPopup(popup_1d4d8047af24bf6e004d26872b8f482c)
+        ;
+
+        
+    
+    
+            marker_f2e549d9de75a1f454bebaf9ae5365e9.bindTooltip(
+                `<div>
+                     INDIAN ORCHARD BRANCH LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a26e3373df5f8d16f1df054dc207fdd2 = L.marker(
+                [42.60518907346709, -72.55938218914247],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_36a7a54a2a09b8de1ba3dd70ff560481 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a26e3373df5f8d16f1df054dc207fdd2.setIcon(icon_36a7a54a2a09b8de1ba3dd70ff560481);
+        
+    
+        var popup_4d0e7e814b514e68d78504ac6536682d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a03d148dcac9e791456140f676966a72 = $(`<div id="html_a03d148dcac9e791456140f676966a72" style="width: 100.0%; height: 100.0%;"><b>Name:</b> CARNEGIE PUBLIC LIBRARY</div>`)[0];
+                popup_4d0e7e814b514e68d78504ac6536682d.setContent(html_a03d148dcac9e791456140f676966a72);
+            
+        
+
+        marker_a26e3373df5f8d16f1df054dc207fdd2.bindPopup(popup_4d0e7e814b514e68d78504ac6536682d)
+        ;
+
+        
+    
+    
+            marker_a26e3373df5f8d16f1df054dc207fdd2.bindTooltip(
+                `<div>
+                     CARNEGIE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02f75c1062aabd8da8fd5cb9fac0a8bd = L.marker(
+                [42.603803788261885, -72.73776828139273],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_36941139c8b5cfba7e7e577381c2a824 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_02f75c1062aabd8da8fd5cb9fac0a8bd.setIcon(icon_36941139c8b5cfba7e7e577381c2a824);
+        
+    
+        var popup_135a2e271ba2ce2b48b23d4a1eb80a64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e31b8160335704a0140f00316b4c319 = $(`<div id="html_8e31b8160335704a0140f00316b4c319" style="width: 100.0%; height: 100.0%;"><b>Name:</b> ARMS LIBRARY</div>`)[0];
+                popup_135a2e271ba2ce2b48b23d4a1eb80a64.setContent(html_8e31b8160335704a0140f00316b4c319);
+            
+        
+
+        marker_02f75c1062aabd8da8fd5cb9fac0a8bd.bindPopup(popup_135a2e271ba2ce2b48b23d4a1eb80a64)
+        ;
+
+        
+    
+    
+            marker_02f75c1062aabd8da8fd5cb9fac0a8bd.bindTooltip(
+                `<div>
+                     ARMS LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e9d433bd272531b34dda535737547a7 = L.marker(
+                [42.694079662599606, -72.89935041443077],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_93a5e6a26d931a6777807a7ab319dcb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1e9d433bd272531b34dda535737547a7.setIcon(icon_93a5e6a26d931a6777807a7ab319dcb0);
+        
+    
+        var popup_3b2e5689babd29584a785ebb02ca6528 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90b56a4dcc11698af2f00032115445d8 = $(`<div id="html_90b56a4dcc11698af2f00032115445d8" style="width: 100.0%; height: 100.0%;"><b>Name:</b> ROWE TOWN LIBRARY</div>`)[0];
+                popup_3b2e5689babd29584a785ebb02ca6528.setContent(html_90b56a4dcc11698af2f00032115445d8);
+            
+        
+
+        marker_1e9d433bd272531b34dda535737547a7.bindPopup(popup_3b2e5689babd29584a785ebb02ca6528)
+        ;
+
+        
+    
+    
+            marker_1e9d433bd272531b34dda535737547a7.bindTooltip(
+                `<div>
+                     ROWE TOWN LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8d45c6b037b9c3b66f85919e3d2b8cd = L.marker(
+                [42.58798541014137, -72.59900457597672],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_f03cb6cc17c0b800089ea1e947f1c667 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c8d45c6b037b9c3b66f85919e3d2b8cd.setIcon(icon_f03cb6cc17c0b800089ea1e947f1c667);
+        
+    
+        var popup_8be60ac81912ee2451794b1183a01616 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30a52855042432447c41629db720a97c = $(`<div id="html_30a52855042432447c41629db720a97c" style="width: 100.0%; height: 100.0%;"><b>Name:</b> GREENFIELD PUBLIC LIBRARY</div>`)[0];
+                popup_8be60ac81912ee2451794b1183a01616.setContent(html_30a52855042432447c41629db720a97c);
+            
+        
+
+        marker_c8d45c6b037b9c3b66f85919e3d2b8cd.bindPopup(popup_8be60ac81912ee2451794b1183a01616)
+        ;
+
+        
+    
+    
+            marker_c8d45c6b037b9c3b66f85919e3d2b8cd.bindTooltip(
+                `<div>
+                     GREENFIELD PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7f7cd8a0d544e90ab732d83f8b835d2 = L.marker(
+                [42.438355202454325, -73.04662878823125],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_f3e83f1c1195c8aaff2d7b082dd8fa5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c7f7cd8a0d544e90ab732d83f8b835d2.setIcon(icon_f3e83f1c1195c8aaff2d7b082dd8fa5f);
+        
+    
+        var popup_2346c1d3f59110c22873c17d7c1a647c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e43259e154ac017a1b43678ee6cce890 = $(`<div id="html_e43259e154ac017a1b43678ee6cce890" style="width: 100.0%; height: 100.0%;"><b>Name:</b> PERU LIBRARY</div>`)[0];
+                popup_2346c1d3f59110c22873c17d7c1a647c.setContent(html_e43259e154ac017a1b43678ee6cce890);
+            
+        
+
+        marker_c7f7cd8a0d544e90ab732d83f8b835d2.bindPopup(popup_2346c1d3f59110c22873c17d7c1a647c)
+        ;
+
+        
+    
+    
+            marker_c7f7cd8a0d544e90ab732d83f8b835d2.bindTooltip(
+                `<div>
+                     PERU LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_253a4b57a1770fb3716418e34344025a = L.marker(
+                [42.14840249691123, -72.5995051869136],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_176828161fc60bd4d9ec3ba59fe93d23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_253a4b57a1770fb3716418e34344025a.setIcon(icon_176828161fc60bd4d9ec3ba59fe93d23);
+        
+    
+        var popup_60afcde7c3a9e5936a38877ad084fe9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0c0c35ed11139a50bb44b8c8b5236a0 = $(`<div id="html_e0c0c35ed11139a50bb44b8c8b5236a0" style="width: 100.0%; height: 100.0%;"><b>Name:</b> CHICOPEE PUBLIC LIBRARY</div>`)[0];
+                popup_60afcde7c3a9e5936a38877ad084fe9f.setContent(html_e0c0c35ed11139a50bb44b8c8b5236a0);
+            
+        
+
+        marker_253a4b57a1770fb3716418e34344025a.bindPopup(popup_60afcde7c3a9e5936a38877ad084fe9f)
+        ;
+
+        
+    
+    
+            marker_253a4b57a1770fb3716418e34344025a.bindTooltip(
+                `<div>
+                     CHICOPEE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c66e26dbc005573f1454d51a5c717db = L.marker(
+                [42.17905574004655, -73.21237421145574],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_c269d1e55390e9ca97629463076c7433 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3c66e26dbc005573f1454d51a5c717db.setIcon(icon_c269d1e55390e9ca97629463076c7433);
+        
+    
+        var popup_23533b9b9fa57f60cff9b1f98432bd7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_904b71346cae265a6812b61f7b3e2b34 = $(`<div id="html_904b71346cae265a6812b61f7b3e2b34" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MONTEREY LIBRARY</div>`)[0];
+                popup_23533b9b9fa57f60cff9b1f98432bd7f.setContent(html_904b71346cae265a6812b61f7b3e2b34);
+            
+        
+
+        marker_3c66e26dbc005573f1454d51a5c717db.bindPopup(popup_23533b9b9fa57f60cff9b1f98432bd7f)
+        ;
+
+        
+    
+    
+            marker_3c66e26dbc005573f1454d51a5c717db.bindTooltip(
+                `<div>
+                     MONTEREY LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be3d75dc12019b1f200cdeb228643946 = L.marker(
+                [42.31679830147231, -72.63568848518895],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_2164c0988065a31960d7f75bbecc89c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_be3d75dc12019b1f200cdeb228643946.setIcon(icon_2164c0988065a31960d7f75bbecc89c4);
+        
+    
+        var popup_c4f6e9f94efcf2a635e0d505ea38b154 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a87e8568378ee4eaae695075e45dd1c = $(`<div id="html_2a87e8568378ee4eaae695075e45dd1c" style="width: 100.0%; height: 100.0%;"><b>Name:</b> FORBES LIBRARY</div>`)[0];
+                popup_c4f6e9f94efcf2a635e0d505ea38b154.setContent(html_2a87e8568378ee4eaae695075e45dd1c);
+            
+        
+
+        marker_be3d75dc12019b1f200cdeb228643946.bindPopup(popup_c4f6e9f94efcf2a635e0d505ea38b154)
+        ;
+
+        
+    
+    
+            marker_be3d75dc12019b1f200cdeb228643946.bindTooltip(
+                `<div>
+                     FORBES LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b24c409ce5535354b91c6fbe7f4e8d48 = L.marker(
+                [42.194979084626354, -73.09220543392343],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_dc300b74880d506a9611509d67bf2f3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b24c409ce5535354b91c6fbe7f4e8d48.setIcon(icon_dc300b74880d506a9611509d67bf2f3a);
+        
+    
+        var popup_4b58d84be5041a42505093e0a2eca59a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7212b17f05de3681e796b7e7c930dc3 = $(`<div id="html_d7212b17f05de3681e796b7e7c930dc3" style="width: 100.0%; height: 100.0%;"><b>Name:</b> OTIS LIBRARY & MUSEUM</div>`)[0];
+                popup_4b58d84be5041a42505093e0a2eca59a.setContent(html_d7212b17f05de3681e796b7e7c930dc3);
+            
+        
+
+        marker_b24c409ce5535354b91c6fbe7f4e8d48.bindPopup(popup_4b58d84be5041a42505093e0a2eca59a)
+        ;
+
+        
+    
+    
+            marker_b24c409ce5535354b91c6fbe7f4e8d48.bindTooltip(
+                `<div>
+                     OTIS LIBRARY & MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d74e9fcf0c72de465f8631a02cd009ad = L.marker(
+                [42.58379211309672, -72.49093909306087],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_d0ecf8f518ceaba34b299f98d30ed62d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d74e9fcf0c72de465f8631a02cd009ad.setIcon(icon_d0ecf8f518ceaba34b299f98d30ed62d);
+        
+    
+        var popup_623be43b8580705f59553606655f6a77 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2824797bf8821031ea45639b634ce652 = $(`<div id="html_2824797bf8821031ea45639b634ce652" style="width: 100.0%; height: 100.0%;"><b>Name:</b> ERVING PUBLIC LIBRARY</div>`)[0];
+                popup_623be43b8580705f59553606655f6a77.setContent(html_2824797bf8821031ea45639b634ce652);
+            
+        
+
+        marker_d74e9fcf0c72de465f8631a02cd009ad.bindPopup(popup_623be43b8580705f59553606655f6a77)
+        ;
+
+        
+    
+    
+            marker_d74e9fcf0c72de465f8631a02cd009ad.bindTooltip(
+                `<div>
+                     ERVING PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7459ab75c15927341559f803afed49e7 = L.marker(
+                [42.15854555011359, -72.3304357353902],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_a94baa0b06331f7ac6415a3d3b351e6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7459ab75c15927341559f803afed49e7.setIcon(icon_a94baa0b06331f7ac6415a3d3b351e6c);
+        
+    
+        var popup_03dbd40d53fbe84b6fd730ec13c9094d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42c294641619f422d13a5b7d7459f32d = $(`<div id="html_42c294641619f422d13a5b7d7459f32d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> PALMER PUBLIC LIBRARY</div>`)[0];
+                popup_03dbd40d53fbe84b6fd730ec13c9094d.setContent(html_42c294641619f422d13a5b7d7459f32d);
+            
+        
+
+        marker_7459ab75c15927341559f803afed49e7.bindPopup(popup_03dbd40d53fbe84b6fd730ec13c9094d)
+        ;
+
+        
+    
+    
+            marker_7459ab75c15927341559f803afed49e7.bindTooltip(
+                `<div>
+                     PALMER PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef669d40fa9157e4d447531e21ebdedc = L.marker(
+                [42.58896155836882, -72.68857209935344],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_3b80929119048ae93a4cc66db8bb7d3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ef669d40fa9157e4d447531e21ebdedc.setIcon(icon_3b80929119048ae93a4cc66db8bb7d3c);
+        
+    
+        var popup_cbf77a1aa726c4397014b44f62c42476 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7db9e02995ea27c887bdedef8789267 = $(`<div id="html_e7db9e02995ea27c887bdedef8789267" style="width: 100.0%; height: 100.0%;"><b>Name:</b> SHELBURNE FREE PUBLIC LIBRARY</div>`)[0];
+                popup_cbf77a1aa726c4397014b44f62c42476.setContent(html_e7db9e02995ea27c887bdedef8789267);
+            
+        
+
+        marker_ef669d40fa9157e4d447531e21ebdedc.bindPopup(popup_cbf77a1aa726c4397014b44f62c42476)
+        ;
+
+        
+    
+    
+            marker_ef669d40fa9157e4d447531e21ebdedc.bindTooltip(
+                `<div>
+                     SHELBURNE FREE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17a260b3beb82a8b37ee09eb3c22401c = L.marker(
+                [42.59122336133559, -72.30726183493096],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_9bc16f934ae25031f775d4afeb2eb179 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_17a260b3beb82a8b37ee09eb3c22401c.setIcon(icon_9bc16f934ae25031f775d4afeb2eb179);
+        
+    
+        var popup_3fc1de2d105c564a1df21f95cbb0024d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e0598a39d15fa15511b46b8eeed368d = $(`<div id="html_1e0598a39d15fa15511b46b8eeed368d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> WHEELER MEMORIAL LIBRARY</div>`)[0];
+                popup_3fc1de2d105c564a1df21f95cbb0024d.setContent(html_1e0598a39d15fa15511b46b8eeed368d);
+            
+        
+
+        marker_17a260b3beb82a8b37ee09eb3c22401c.bindPopup(popup_3fc1de2d105c564a1df21f95cbb0024d)
+        ;
+
+        
+    
+    
+            marker_17a260b3beb82a8b37ee09eb3c22401c.bindTooltip(
+                `<div>
+                     WHEELER MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7cf83cca666427951f2b8f30b95aa58 = L.marker(
+                [42.06456760609288, -72.41389101233771],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_0a039a05ae1a299dc9d9aa9adf4d6016 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d7cf83cca666427951f2b8f30b95aa58.setIcon(icon_0a039a05ae1a299dc9d9aa9adf4d6016);
+        
+    
+        var popup_c9059b8691e3638bbc3b2693a6dd12ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b76cd70286e253015be130ea6452543f = $(`<div id="html_b76cd70286e253015be130ea6452543f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> HAMPDEN PUBLIC LIBRARY</div>`)[0];
+                popup_c9059b8691e3638bbc3b2693a6dd12ce.setContent(html_b76cd70286e253015be130ea6452543f);
+            
+        
+
+        marker_d7cf83cca666427951f2b8f30b95aa58.bindPopup(popup_c9059b8691e3638bbc3b2693a6dd12ce)
+        ;
+
+        
+    
+    
+            marker_d7cf83cca666427951f2b8f30b95aa58.bindTooltip(
+                `<div>
+                     HAMPDEN PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1787f44a369bc2fcbd47c2d4ed389ca = L.marker(
+                [42.26206682542082, -72.50902909694412],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_53424803aa52ca4ae8f3b9a4f36f1222 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e1787f44a369bc2fcbd47c2d4ed389ca.setIcon(icon_53424803aa52ca4ae8f3b9a4f36f1222);
+        
+    
+        var popup_60fdd2c9ceb8020ea3c38519ceb276c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b0b2d7f60f8ff4f3bddd391c0347e70 = $(`<div id="html_5b0b2d7f60f8ff4f3bddd391c0347e70" style="width: 100.0%; height: 100.0%;"><b>Name:</b> GRANBY FREE PUBLIC LIBRARY</div>`)[0];
+                popup_60fdd2c9ceb8020ea3c38519ceb276c4.setContent(html_5b0b2d7f60f8ff4f3bddd391c0347e70);
+            
+        
+
+        marker_e1787f44a369bc2fcbd47c2d4ed389ca.bindPopup(popup_60fdd2c9ceb8020ea3c38519ceb276c4)
+        ;
+
+        
+    
+    
+            marker_e1787f44a369bc2fcbd47c2d4ed389ca.bindTooltip(
+                `<div>
+                     GRANBY FREE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb45f322319aad36c6af43c39ba8c3e7 = L.marker(
+                [42.102229301941, -72.31911047153739],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_5b6eb732743796e841db00e5029799e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cb45f322319aad36c6af43c39ba8c3e7.setIcon(icon_5b6eb732743796e841db00e5029799e1);
+        
+    
+        var popup_09dfc456853f6893711ecd1ab46026f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_977043b12086da0a4cf69c861f88c05e = $(`<div id="html_977043b12086da0a4cf69c861f88c05e" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MONSON FREE LIBRARY</div>`)[0];
+                popup_09dfc456853f6893711ecd1ab46026f2.setContent(html_977043b12086da0a4cf69c861f88c05e);
+            
+        
+
+        marker_cb45f322319aad36c6af43c39ba8c3e7.bindPopup(popup_09dfc456853f6893711ecd1ab46026f2)
+        ;
+
+        
+    
+    
+            marker_cb45f322319aad36c6af43c39ba8c3e7.bindTooltip(
+                `<div>
+                     MONSON FREE LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05ed8b9c924dfc01ca491471ec9d0292 = L.marker(
+                [42.62382946886377, -73.1202987802823],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_33047fa2bbbaca6a0704f6bef10d0909 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_05ed8b9c924dfc01ca491471ec9d0292.setIcon(icon_33047fa2bbbaca6a0704f6bef10d0909);
+        
+    
+        var popup_10ae9dd17dacedf4c91be6e3e1af0585 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90d8bda913eaac8d92cf9483e807952d = $(`<div id="html_90d8bda913eaac8d92cf9483e807952d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> ADAMS FREE LIBRARY</div>`)[0];
+                popup_10ae9dd17dacedf4c91be6e3e1af0585.setContent(html_90d8bda913eaac8d92cf9483e807952d);
+            
+        
+
+        marker_05ed8b9c924dfc01ca491471ec9d0292.bindPopup(popup_10ae9dd17dacedf4c91be6e3e1af0585)
+        ;
+
+        
+    
+    
+            marker_05ed8b9c924dfc01ca491471ec9d0292.bindTooltip(
+                `<div>
+                     ADAMS FREE LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_821917614620dccdee68f41ee36e93fd = L.marker(
+                [42.357247890480416, -73.28416189513278],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_63fb0680030933dbc86828e65c1caa79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_821917614620dccdee68f41ee36e93fd.setIcon(icon_63fb0680030933dbc86828e65c1caa79);
+        
+    
+        var popup_97860f9ff3fb9f5266ac78e4401617b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3823019b71f582bb38dfa1c48badd52 = $(`<div id="html_f3823019b71f582bb38dfa1c48badd52" style="width: 100.0%; height: 100.0%;"><b>Name:</b> THE LENOX LIBRARY</div>`)[0];
+                popup_97860f9ff3fb9f5266ac78e4401617b2.setContent(html_f3823019b71f582bb38dfa1c48badd52);
+            
+        
+
+        marker_821917614620dccdee68f41ee36e93fd.bindPopup(popup_97860f9ff3fb9f5266ac78e4401617b2)
+        ;
+
+        
+    
+    
+            marker_821917614620dccdee68f41ee36e93fd.bindTooltip(
+                `<div>
+                     THE LENOX LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a78c6209ecd9301c205ad9350257aa6f = L.marker(
+                [42.392154560335285, -72.84107727130458],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_1eca04e78391633ae03021ff3dc46d44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a78c6209ecd9301c205ad9350257aa6f.setIcon(icon_1eca04e78391633ae03021ff3dc46d44);
+        
+    
+        var popup_dca73a3a9a6f1b5a2291b6861bd36133 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0d713e224badb70a0565eac7daae42e = $(`<div id="html_d0d713e224badb70a0565eac7daae42e" style="width: 100.0%; height: 100.0%;"><b>Name:</b> CHESTERFIELD PUBLIC LIBRARY</div>`)[0];
+                popup_dca73a3a9a6f1b5a2291b6861bd36133.setContent(html_d0d713e224badb70a0565eac7daae42e);
+            
+        
+
+        marker_a78c6209ecd9301c205ad9350257aa6f.bindPopup(popup_dca73a3a9a6f1b5a2291b6861bd36133)
+        ;
+
+        
+    
+    
+            marker_a78c6209ecd9301c205ad9350257aa6f.bindTooltip(
+                `<div>
+                     CHESTERFIELD PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b028da797887b113efabcd35264be44 = L.marker(
+                [42.35111072152338, -72.19940524045005],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_b417c7d4f53f9f8f9eb908fbaf2a0530 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2b028da797887b113efabcd35264be44.setIcon(icon_b417c7d4f53f9f8f9eb908fbaf2a0530);
+        
+    
+        var popup_a010939d652535dc996dd07209d5875b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aaeefcdde5912557e0b0687a3e386d34 = $(`<div id="html_aaeefcdde5912557e0b0687a3e386d34" style="width: 100.0%; height: 100.0%;"><b>Name:</b> PAIGE MEMORIAL LIBRARY</div>`)[0];
+                popup_a010939d652535dc996dd07209d5875b.setContent(html_aaeefcdde5912557e0b0687a3e386d34);
+            
+        
+
+        marker_2b028da797887b113efabcd35264be44.bindPopup(popup_a010939d652535dc996dd07209d5875b)
+        ;
+
+        
+    
+    
+            marker_2b028da797887b113efabcd35264be44.bindTooltip(
+                `<div>
+                     PAIGE MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a04f77ec56f30d44bffe9f84870dc62 = L.marker(
+                [42.082090224479394, -73.01214572646948],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_b1586de0406d47fba98cee6ed3eddad7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3a04f77ec56f30d44bffe9f84870dc62.setIcon(icon_b1586de0406d47fba98cee6ed3eddad7);
+        
+    
+        var popup_0002cdc719679aa154c303f7e337f8ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffb615a6fe7e21752afaaaf753726aa8 = $(`<div id="html_ffb615a6fe7e21752afaaaf753726aa8" style="width: 100.0%; height: 100.0%;"><b>Name:</b> TOLLAND PUBLIC LIBRARY</div>`)[0];
+                popup_0002cdc719679aa154c303f7e337f8ea.setContent(html_ffb615a6fe7e21752afaaaf753726aa8);
+            
+        
+
+        marker_3a04f77ec56f30d44bffe9f84870dc62.bindPopup(popup_0002cdc719679aa154c303f7e337f8ea)
+        ;
+
+        
+    
+    
+            marker_3a04f77ec56f30d44bffe9f84870dc62.bindTooltip(
+                `<div>
+                     TOLLAND PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47787039a4393962bd190bcc52c82c60 = L.marker(
+                [42.06607018069522, -72.16097846757725],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_5b11afe4a55cc842c4a01f35e7d69e01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_47787039a4393962bd190bcc52c82c60.setIcon(icon_5b11afe4a55cc842c4a01f35e7d69e01);
+        
+    
+        var popup_a4bd3fba624f1702c36dbbeeccbc078d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26c5e1b85fd8b9bdaaf637579068aad5 = $(`<div id="html_26c5e1b85fd8b9bdaaf637579068aad5" style="width: 100.0%; height: 100.0%;"><b>Name:</b> HOLLAND PUBLIC LIBRARY</div>`)[0];
+                popup_a4bd3fba624f1702c36dbbeeccbc078d.setContent(html_26c5e1b85fd8b9bdaaf637579068aad5);
+            
+        
+
+        marker_47787039a4393962bd190bcc52c82c60.bindPopup(popup_a4bd3fba624f1702c36dbbeeccbc078d)
+        ;
+
+        
+    
+    
+            marker_47787039a4393962bd190bcc52c82c60.bindTooltip(
+                `<div>
+                     HOLLAND PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f6a26f76a48e3b1485c5064f66bd4d2 = L.marker(
+                [42.64107795752125, -72.49870125060504],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_9e2a61f4fb9ce94b23f122e458ed2403 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3f6a26f76a48e3b1485c5064f66bd4d2.setIcon(icon_9e2a61f4fb9ce94b23f122e458ed2403);
+        
+    
+        var popup_fd1602a4df69ba31305c2dd814181649 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d1c9fc36ad685a7fcab3ade16bbc385 = $(`<div id="html_7d1c9fc36ad685a7fcab3ade16bbc385" style="width: 100.0%; height: 100.0%;"><b>Name:</b> SLATE MEMORIAL LIBRARY</div>`)[0];
+                popup_fd1602a4df69ba31305c2dd814181649.setContent(html_7d1c9fc36ad685a7fcab3ade16bbc385);
+            
+        
+
+        marker_3f6a26f76a48e3b1485c5064f66bd4d2.bindPopup(popup_fd1602a4df69ba31305c2dd814181649)
+        ;
+
+        
+    
+    
+            marker_3f6a26f76a48e3b1485c5064f66bd4d2.bindTooltip(
+                `<div>
+                     SLATE MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c3a7fd914af214e94faa590baa58baf = L.marker(
+                [42.49998670078314, -72.33071706633501],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_75df6c13eabcddbb75e4ef8da3bee002 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3c3a7fd914af214e94faa590baa58baf.setIcon(icon_75df6c13eabcddbb75e4ef8da3bee002);
+        
+    
+        var popup_b044480e86964110eeaf6d04fc502b32 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d8b7580dd3ef918dd6bfe89c49b777b = $(`<div id="html_0d8b7580dd3ef918dd6bfe89c49b777b" style="width: 100.0%; height: 100.0%;"><b>Name:</b> NEW SALEM PUBLIC LIBRARY</div>`)[0];
+                popup_b044480e86964110eeaf6d04fc502b32.setContent(html_0d8b7580dd3ef918dd6bfe89c49b777b);
+            
+        
+
+        marker_3c3a7fd914af214e94faa590baa58baf.bindPopup(popup_b044480e86964110eeaf6d04fc502b32)
+        ;
+
+        
+    
+    
+            marker_3c3a7fd914af214e94faa590baa58baf.bindTooltip(
+                `<div>
+                     NEW SALEM PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_020ec383032a3d83b484c1d4bd44ab69 = L.marker(
+                [42.370101098465305, -72.59713726009788],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_86f41cb1c76c08262a994347ad2e1714 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_020ec383032a3d83b484c1d4bd44ab69.setIcon(icon_86f41cb1c76c08262a994347ad2e1714);
+        
+    
+        var popup_1624fcf3980582aeaa08e14bea0ca307 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31d425601481d8541e71296b9eeb3b34 = $(`<div id="html_31d425601481d8541e71296b9eeb3b34" style="width: 100.0%; height: 100.0%;"><b>Name:</b> HATFIELD PUBLIC LIBRARY</div>`)[0];
+                popup_1624fcf3980582aeaa08e14bea0ca307.setContent(html_31d425601481d8541e71296b9eeb3b34);
+            
+        
+
+        marker_020ec383032a3d83b484c1d4bd44ab69.bindPopup(popup_1624fcf3980582aeaa08e14bea0ca307)
+        ;
+
+        
+    
+    
+            marker_020ec383032a3d83b484c1d4bd44ab69.bindTooltip(
+                `<div>
+                     HATFIELD PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f3c6c5e740ce6958616f939d3184286 = L.marker(
+                [42.563710189317185, -73.02504262598151],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_f681feebdf71eee0f6c2aa5e0b9352af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8f3c6c5e740ce6958616f939d3184286.setIcon(icon_f681feebdf71eee0f6c2aa5e0b9352af);
+        
+    
+        var popup_0617f723fc56e06632590151c0e39b21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80fbf4e7569e0c414a7195403629e689 = $(`<div id="html_80fbf4e7569e0c414a7195403629e689" style="width: 100.0%; height: 100.0%;"><b>Name:</b> SAVOY HOLLOW LIBRARY</div>`)[0];
+                popup_0617f723fc56e06632590151c0e39b21.setContent(html_80fbf4e7569e0c414a7195403629e689);
+            
+        
+
+        marker_8f3c6c5e740ce6958616f939d3184286.bindPopup(popup_0617f723fc56e06632590151c0e39b21)
+        ;
+
+        
+    
+    
+            marker_8f3c6c5e740ce6958616f939d3184286.bindTooltip(
+                `<div>
+                     SAVOY HOLLOW LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ee27f094700e778e7b9d3edc080013d = L.marker(
+                [42.67175330011816, -72.55219492032214],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_aa0ca05b90e737d2b0c08f67536f96ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1ee27f094700e778e7b9d3edc080013d.setIcon(icon_aa0ca05b90e737d2b0c08f67536f96ea);
+        
+    
+        var popup_2fa37bfe50101addaa021eba69353ce2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_040d284f04235b1860b7c49aa0dd3cdc = $(`<div id="html_040d284f04235b1860b7c49aa0dd3cdc" style="width: 100.0%; height: 100.0%;"><b>Name:</b> CUSHMAN LIBRARY</div>`)[0];
+                popup_2fa37bfe50101addaa021eba69353ce2.setContent(html_040d284f04235b1860b7c49aa0dd3cdc);
+            
+        
+
+        marker_1ee27f094700e778e7b9d3edc080013d.bindPopup(popup_2fa37bfe50101addaa021eba69353ce2)
+        ;
+
+        
+    
+    
+            marker_1ee27f094700e778e7b9d3edc080013d.bindTooltip(
+                `<div>
+                     CUSHMAN LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc82b838a7d5dab8d41faf8dfb83ebfa = L.marker(
+                [42.39308169680456, -72.73101467566259],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_acce8365721141c2e861f82715569fd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fc82b838a7d5dab8d41faf8dfb83ebfa.setIcon(icon_acce8365721141c2e861f82715569fd5);
+        
+    
+        var popup_dad28659509a87ad1805d1e5a1532d11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e86d5f92fd456018d6bf383bc0d3974 = $(`<div id="html_6e86d5f92fd456018d6bf383bc0d3974" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MEEKINS LIBRARY</div>`)[0];
+                popup_dad28659509a87ad1805d1e5a1532d11.setContent(html_6e86d5f92fd456018d6bf383bc0d3974);
+            
+        
+
+        marker_fc82b838a7d5dab8d41faf8dfb83ebfa.bindPopup(popup_dad28659509a87ad1805d1e5a1532d11)
+        ;
+
+        
+    
+    
+            marker_fc82b838a7d5dab8d41faf8dfb83ebfa.bindTooltip(
+                `<div>
+                     MEEKINS LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3e54c9dac3b551f347958768b164df3 = L.marker(
+                [42.71847933085328, -73.10386063041508],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_6b10cc4bd8603be5f0eabedde6def8aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e3e54c9dac3b551f347958768b164df3.setIcon(icon_6b10cc4bd8603be5f0eabedde6def8aa);
+        
+    
+        var popup_eae2beb871a171d498e0a67ce05d08d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b816cc61a78429d81350a42cc6fe26e3 = $(`<div id="html_b816cc61a78429d81350a42cc6fe26e3" style="width: 100.0%; height: 100.0%;"><b>Name:</b> CLARKSBURG TOWN LIBRARY</div>`)[0];
+                popup_eae2beb871a171d498e0a67ce05d08d5.setContent(html_b816cc61a78429d81350a42cc6fe26e3);
+            
+        
+
+        marker_e3e54c9dac3b551f347958768b164df3.bindPopup(popup_eae2beb871a171d498e0a67ce05d08d5)
+        ;
+
+        
+    
+    
+            marker_e3e54c9dac3b551f347958768b164df3.bindTooltip(
+                `<div>
+                     CLARKSBURG TOWN LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eca09346e4d997094cf1788d58ff6e89 = L.marker(
+                [42.06702203490642, -72.8607742609775],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_a4c6a107c9acde2272931eca659ad301 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_eca09346e4d997094cf1788d58ff6e89.setIcon(icon_a4c6a107c9acde2272931eca659ad301);
+        
+    
+        var popup_bc177f0b61adce0e531347b8fe11ccb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60744687bfceb9be5797a76751ad1025 = $(`<div id="html_60744687bfceb9be5797a76751ad1025" style="width: 100.0%; height: 100.0%;"><b>Name:</b> GRANVILLE PUBLIC LIBRARY</div>`)[0];
+                popup_bc177f0b61adce0e531347b8fe11ccb4.setContent(html_60744687bfceb9be5797a76751ad1025);
+            
+        
+
+        marker_eca09346e4d997094cf1788d58ff6e89.bindPopup(popup_bc177f0b61adce0e531347b8fe11ccb4)
+        ;
+
+        
+    
+    
+            marker_eca09346e4d997094cf1788d58ff6e89.bindTooltip(
+                `<div>
+                     GRANVILLE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3b17e99212ebffc983b4dddfe23725c = L.marker(
+                [42.526449451452784, -72.7943134235086],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_a0f3ca4e71fac90d5e24e8e8bea7d9aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c3b17e99212ebffc983b4dddfe23725c.setIcon(icon_a0f3ca4e71fac90d5e24e8e8bea7d9aa);
+        
+    
+        var popup_0d8f6f5e552607e5ecc1469c817faedc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e46bc5243fd82edb40b35a69c9c5310 = $(`<div id="html_2e46bc5243fd82edb40b35a69c9c5310" style="width: 100.0%; height: 100.0%;"><b>Name:</b> BELDING MEMORIAL LIBRARY</div>`)[0];
+                popup_0d8f6f5e552607e5ecc1469c817faedc.setContent(html_2e46bc5243fd82edb40b35a69c9c5310);
+            
+        
+
+        marker_c3b17e99212ebffc983b4dddfe23725c.bindPopup(popup_0d8f6f5e552607e5ecc1469c817faedc)
+        ;
+
+        
+    
+    
+            marker_c3b17e99212ebffc983b4dddfe23725c.bindTooltip(
+                `<div>
+                     BELDING MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fb3c669d66ae416f7c146cbb87f75b9 = L.marker(
+                [42.19599522091503, -73.36057246960334],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_9824555c906869fb405fd676d8e9500e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8fb3c669d66ae416f7c146cbb87f75b9.setIcon(icon_9824555c906869fb405fd676d8e9500e);
+        
+    
+        var popup_1d28eb41ff03dbb9c93871d6edb68559 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4d1d0c767108925b1aa8a5f52da3d98 = $(`<div id="html_c4d1d0c767108925b1aa8a5f52da3d98" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MASON LIBRARY</div>`)[0];
+                popup_1d28eb41ff03dbb9c93871d6edb68559.setContent(html_c4d1d0c767108925b1aa8a5f52da3d98);
+            
+        
+
+        marker_8fb3c669d66ae416f7c146cbb87f75b9.bindPopup(popup_1d28eb41ff03dbb9c93871d6edb68559)
+        ;
+
+        
+    
+    
+            marker_8fb3c669d66ae416f7c146cbb87f75b9.bindTooltip(
+                `<div>
+                     MASON LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_640ab79cd9c3e127367aad921361bec9 = L.marker(
+                [42.08687694592423, -72.5635309278069],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_4616e08f4ef95209002411c3ab89d644 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_640ab79cd9c3e127367aad921361bec9.setIcon(icon_4616e08f4ef95209002411c3ab89d644);
+        
+    
+        var popup_257018e9782dc6a166eababc15e447ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_519cc8e8b281c33d702370f7af1966a8 = $(`<div id="html_519cc8e8b281c33d702370f7af1966a8" style="width: 100.0%; height: 100.0%;"><b>Name:</b> FOREST PARK BRANCH LIBRARY</div>`)[0];
+                popup_257018e9782dc6a166eababc15e447ce.setContent(html_519cc8e8b281c33d702370f7af1966a8);
+            
+        
+
+        marker_640ab79cd9c3e127367aad921361bec9.bindPopup(popup_257018e9782dc6a166eababc15e447ce)
+        ;
+
+        
+    
+    
+            marker_640ab79cd9c3e127367aad921361bec9.bindTooltip(
+                `<div>
+                     FOREST PARK BRANCH LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d19dbdfcd9990c9e0b37b26676e9cdb = L.marker(
+                [42.052201938814996, -72.5810639680159],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_246a4f39e6b22439c8976a71cea03372 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8d19dbdfcd9990c9e0b37b26676e9cdb.setIcon(icon_246a4f39e6b22439c8976a71cea03372);
+        
+    
+        var popup_f8ed4da832d2bd07186fc55912938d60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_371ea3e45ddf718cd26b2e0839ca1743 = $(`<div id="html_371ea3e45ddf718cd26b2e0839ca1743" style="width: 100.0%; height: 100.0%;"><b>Name:</b> RICHARD SALTER STORRS LIBRARY</div>`)[0];
+                popup_f8ed4da832d2bd07186fc55912938d60.setContent(html_371ea3e45ddf718cd26b2e0839ca1743);
+            
+        
+
+        marker_8d19dbdfcd9990c9e0b37b26676e9cdb.bindPopup(popup_f8ed4da832d2bd07186fc55912938d60)
+        ;
+
+        
+    
+    
+            marker_8d19dbdfcd9990c9e0b37b26676e9cdb.bindTooltip(
+                `<div>
+                     RICHARD SALTER STORRS LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a114169ac5cce2e4b92d09750ee1b93b = L.marker(
+                [42.307930495108174, -72.21031440541294],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_b5f69d672e745b46ce34e1c0ed073c07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a114169ac5cce2e4b92d09750ee1b93b.setIcon(icon_b5f69d672e745b46ce34e1c0ed073c07);
+        
+    
+        var popup_f46274843d8aaefd1f3ba2c5ef7300b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1157af564998b553687b8a3855140b20 = $(`<div id="html_1157af564998b553687b8a3855140b20" style="width: 100.0%; height: 100.0%;"><b>Name:</b> GILBERTVILLE PUBLIC LIBRARY</div>`)[0];
+                popup_f46274843d8aaefd1f3ba2c5ef7300b7.setContent(html_1157af564998b553687b8a3855140b20);
+            
+        
+
+        marker_a114169ac5cce2e4b92d09750ee1b93b.bindPopup(popup_f46274843d8aaefd1f3ba2c5ef7300b7)
+        ;
+
+        
+    
+    
+            marker_a114169ac5cce2e4b92d09750ee1b93b.bindTooltip(
+                `<div>
+                     GILBERTVILLE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f05237d63db59cff2b5cef9ca202f41 = L.marker(
+                [42.37473234523664, -72.70366381013616],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_fad15960529824ed831626a541c4fa7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7f05237d63db59cff2b5cef9ca202f41.setIcon(icon_fad15960529824ed831626a541c4fa7a);
+        
+    
+        var popup_20d7128a242224e285573caccdf62ce7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b718922111e71f8a3d1001b75df85e0 = $(`<div id="html_9b718922111e71f8a3d1001b75df85e0" style="width: 100.0%; height: 100.0%;"><b>Name:</b> HAYDENVILLE LIBRARY</div>`)[0];
+                popup_20d7128a242224e285573caccdf62ce7.setContent(html_9b718922111e71f8a3d1001b75df85e0);
+            
+        
+
+        marker_7f05237d63db59cff2b5cef9ca202f41.bindPopup(popup_20d7128a242224e285573caccdf62ce7)
+        ;
+
+        
+    
+    
+            marker_7f05237d63db59cff2b5cef9ca202f41.bindTooltip(
+                `<div>
+                     HAYDENVILLE LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5fc94bc2da51bdb46a6a2658a29bd21 = L.marker(
+                [42.4673643017375, -72.58099890974746],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_4395e449e055bbb4f2eb502a5d2306f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c5fc94bc2da51bdb46a6a2658a29bd21.setIcon(icon_4395e449e055bbb4f2eb502a5d2306f8);
+        
+    
+        var popup_83f26d348a4f6d8c26566596a006670d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_724817d7e1665a77576c69f3d755b813 = $(`<div id="html_724817d7e1665a77576c69f3d755b813" style="width: 100.0%; height: 100.0%;"><b>Name:</b> SUNDERLAND PUBLIC LIBRARY</div>`)[0];
+                popup_83f26d348a4f6d8c26566596a006670d.setContent(html_724817d7e1665a77576c69f3d755b813);
+            
+        
+
+        marker_c5fc94bc2da51bdb46a6a2658a29bd21.bindPopup(popup_83f26d348a4f6d8c26566596a006670d)
+        ;
+
+        
+    
+    
+            marker_c5fc94bc2da51bdb46a6a2658a29bd21.bindTooltip(
+                `<div>
+                     SUNDERLAND PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbd4d9130c92f9a68796877b74f0c965 = L.marker(
+                [42.57832837323383, -72.49425328990009],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_a6095bb78d0f52354025a3edc11d5941 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bbd4d9130c92f9a68796877b74f0c965.setIcon(icon_a6095bb78d0f52354025a3edc11d5941);
+        
+    
+        var popup_29dca74f559d7ad96d71b56094f895be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a53dd663988b1382931a0af48acd03e = $(`<div id="html_7a53dd663988b1382931a0af48acd03e" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MILLERS FALLS LIBRARY</div>`)[0];
+                popup_29dca74f559d7ad96d71b56094f895be.setContent(html_7a53dd663988b1382931a0af48acd03e);
+            
+        
+
+        marker_bbd4d9130c92f9a68796877b74f0c965.bindPopup(popup_29dca74f559d7ad96d71b56094f895be)
+        ;
+
+        
+    
+    
+            marker_bbd4d9130c92f9a68796877b74f0c965.bindTooltip(
+                `<div>
+                     MILLERS FALLS LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4717b3faa0516af737267ffe5ba216aa = L.marker(
+                [42.722581366439115, -72.94168719675744],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_d36195e99b6ded7bfae4248209f0b47a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4717b3faa0516af737267ffe5ba216aa.setIcon(icon_d36195e99b6ded7bfae4248209f0b47a);
+        
+    
+        var popup_2e72ee741c4943135563bb6fc0fa604f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01264e7d590631384307f82d98ce564a = $(`<div id="html_01264e7d590631384307f82d98ce564a" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MONROE PUBLIC LIBRARY</div>`)[0];
+                popup_2e72ee741c4943135563bb6fc0fa604f.setContent(html_01264e7d590631384307f82d98ce564a);
+            
+        
+
+        marker_4717b3faa0516af737267ffe5ba216aa.bindPopup(popup_2e72ee741c4943135563bb6fc0fa604f)
+        ;
+
+        
+    
+    
+            marker_4717b3faa0516af737267ffe5ba216aa.bindTooltip(
+                `<div>
+                     MONROE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2bf191d9c54a01561527c264ace7f38c = L.marker(
+                [42.33089197979009, -73.08419559820886],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_3fea64c10de4b307785d4872e68b311c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2bf191d9c54a01561527c264ace7f38c.setIcon(icon_3fea64c10de4b307785d4872e68b311c);
+        
+    
+        var popup_9e8309a526ea0c9a8b867ac9c401e3dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c0e48e7bd93c2a0d6f86af1ca570f4e = $(`<div id="html_7c0e48e7bd93c2a0d6f86af1ca570f4e" style="width: 100.0%; height: 100.0%;"><b>Name:</b> BECKET ATHENAEUM, INC.</div>`)[0];
+                popup_9e8309a526ea0c9a8b867ac9c401e3dd.setContent(html_7c0e48e7bd93c2a0d6f86af1ca570f4e);
+            
+        
+
+        marker_2bf191d9c54a01561527c264ace7f38c.bindPopup(popup_9e8309a526ea0c9a8b867ac9c401e3dd)
+        ;
+
+        
+    
+    
+            marker_2bf191d9c54a01561527c264ace7f38c.bindTooltip(
+                `<div>
+                     BECKET ATHENAEUM, INC.
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ab6267a606303603c6978949ba4a3ed = L.marker(
+                [42.11300994420065, -73.26789996441335],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_8fdd96563baa1da45f3a484c55eda01a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4ab6267a606303603c6978949ba4a3ed.setIcon(icon_8fdd96563baa1da45f3a484c55eda01a);
+        
+    
+        var popup_6da1d33ed482b7905e483d72338a9b21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_597ed9edcd34e5f6edff696bc7fd34de = $(`<div id="html_597ed9edcd34e5f6edff696bc7fd34de" style="width: 100.0%; height: 100.0%;"><b>Name:</b> NEW MARLBOROUGH TOWN LIBRARY</div>`)[0];
+                popup_6da1d33ed482b7905e483d72338a9b21.setContent(html_597ed9edcd34e5f6edff696bc7fd34de);
+            
+        
+
+        marker_4ab6267a606303603c6978949ba4a3ed.bindPopup(popup_6da1d33ed482b7905e483d72338a9b21)
+        ;
+
+        
+    
+    
+            marker_4ab6267a606303603c6978949ba4a3ed.bindTooltip(
+                `<div>
+                     NEW MARLBOROUGH TOWN LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b965c57ee704a1865c0da60dca337be = L.marker(
+                [42.236060177623116, -73.41440626476454],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_2e0532ff6f22d63dff39a78df57a4159 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4b965c57ee704a1865c0da60dca337be.setIcon(icon_2e0532ff6f22d63dff39a78df57a4159);
+        
+    
+        var popup_1d47bbb995a5dcd22d9b64c1bf2853d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac81f15bfc00e2094b7fa7cd901bd07f = $(`<div id="html_ac81f15bfc00e2094b7fa7cd901bd07f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> ALFORD FREE PUBLIC LIBRARY</div>`)[0];
+                popup_1d47bbb995a5dcd22d9b64c1bf2853d2.setContent(html_ac81f15bfc00e2094b7fa7cd901bd07f);
+            
+        
+
+        marker_4b965c57ee704a1865c0da60dca337be.bindPopup(popup_1d47bbb995a5dcd22d9b64c1bf2853d2)
+        ;
+
+        
+    
+    
+            marker_4b965c57ee704a1865c0da60dca337be.bindTooltip(
+                `<div>
+                     ALFORD FREE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04a9491ab44a66d73ffea5ed48597ce7 = L.marker(
+                [42.44771726377978, -73.25151496358134],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_d807949c2650800dc00c770901db9535 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_04a9491ab44a66d73ffea5ed48597ce7.setIcon(icon_d807949c2650800dc00c770901db9535);
+        
+    
+        var popup_47e1d62269b4b650d9342714383756c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f1f099dc88e29911f0c41839fd7af15 = $(`<div id="html_5f1f099dc88e29911f0c41839fd7af15" style="width: 100.0%; height: 100.0%;"><b>Name:</b> BERKSHIRE ATHENAEUM</div>`)[0];
+                popup_47e1d62269b4b650d9342714383756c8.setContent(html_5f1f099dc88e29911f0c41839fd7af15);
+            
+        
+
+        marker_04a9491ab44a66d73ffea5ed48597ce7.bindPopup(popup_47e1d62269b4b650d9342714383756c8)
+        ;
+
+        
+    
+    
+            marker_04a9491ab44a66d73ffea5ed48597ce7.bindTooltip(
+                `<div>
+                     BERKSHIRE ATHENAEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b54674b8b719c984440f7fb167d9458 = L.marker(
+                [42.54336681495787, -73.32294232155395],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_9788e8f69ab09f40fbc5ddcff529ca90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7b54674b8b719c984440f7fb167d9458.setIcon(icon_9788e8f69ab09f40fbc5ddcff529ca90);
+        
+    
+        var popup_8636297b558b4ecfdac187c01bb9c32f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38a6d059058911859a29fd4a89bc4336 = $(`<div id="html_38a6d059058911859a29fd4a89bc4336" style="width: 100.0%; height: 100.0%;"><b>Name:</b> TAYLOR MEMORIAL LIBRARY</div>`)[0];
+                popup_8636297b558b4ecfdac187c01bb9c32f.setContent(html_38a6d059058911859a29fd4a89bc4336);
+            
+        
+
+        marker_7b54674b8b719c984440f7fb167d9458.bindPopup(popup_8636297b558b4ecfdac187c01bb9c32f)
+        ;
+
+        
+    
+    
+            marker_7b54674b8b719c984440f7fb167d9458.bindTooltip(
+                `<div>
+                     TAYLOR MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3a4d60d91b03ff3166fde63dfb25c58 = L.marker(
+                [42.105129254142646, -72.62203101170326],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_be4e1b7ead0622740a08626b4c0eadc8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a3a4d60d91b03ff3166fde63dfb25c58.setIcon(icon_be4e1b7ead0622740a08626b4c0eadc8);
+        
+    
+        var popup_0edfb26f5eda1a7928abd56d38f38638 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d84f936435ebe486d617e091ec0a939 = $(`<div id="html_1d84f936435ebe486d617e091ec0a939" style="width: 100.0%; height: 100.0%;"><b>Name:</b> WEST SPRINGFIELD PUBLIC LIBRARY</div>`)[0];
+                popup_0edfb26f5eda1a7928abd56d38f38638.setContent(html_1d84f936435ebe486d617e091ec0a939);
+            
+        
+
+        marker_a3a4d60d91b03ff3166fde63dfb25c58.bindPopup(popup_0edfb26f5eda1a7928abd56d38f38638)
+        ;
+
+        
+    
+    
+            marker_a3a4d60d91b03ff3166fde63dfb25c58.bindTooltip(
+                `<div>
+                     WEST SPRINGFIELD PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b061c8ada0d6ef5d2aa807edc3f4de48 = L.marker(
+                [42.07405282094896, -72.21667614076127],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_eed98d21be6fb3a96e9adc71e0e7d12d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b061c8ada0d6ef5d2aa807edc3f4de48.setIcon(icon_eed98d21be6fb3a96e9adc71e0e7d12d);
+        
+    
+        var popup_1bd4762a99b054bf34a5ab257c8a7453 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc896879f919e3262138f3085146571f = $(`<div id="html_cc896879f919e3262138f3085146571f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> WALES PUBLIC LIBRARY</div>`)[0];
+                popup_1bd4762a99b054bf34a5ab257c8a7453.setContent(html_cc896879f919e3262138f3085146571f);
+            
+        
+
+        marker_b061c8ada0d6ef5d2aa807edc3f4de48.bindPopup(popup_1bd4762a99b054bf34a5ab257c8a7453)
+        ;
+
+        
+    
+    
+            marker_b061c8ada0d6ef5d2aa807edc3f4de48.bindTooltip(
+                `<div>
+                     WALES PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b0243d1e2cc6f85570dfd6aec576d8e = L.marker(
+                [42.30654475322817, -73.24961911430444],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_d504da9cea1ddf0344c956b8d2ec3e25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1b0243d1e2cc6f85570dfd6aec576d8e.setIcon(icon_d504da9cea1ddf0344c956b8d2ec3e25);
+        
+    
+        var popup_7d89d278f86cc528dbf1e0d51b0b1c73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89cb05c5d2904ef44ee975dae5d5de1b = $(`<div id="html_89cb05c5d2904ef44ee975dae5d5de1b" style="width: 100.0%; height: 100.0%;"><b>Name:</b> THE LEE LIBRARY</div>`)[0];
+                popup_7d89d278f86cc528dbf1e0d51b0b1c73.setContent(html_89cb05c5d2904ef44ee975dae5d5de1b);
+            
+        
+
+        marker_1b0243d1e2cc6f85570dfd6aec576d8e.bindPopup(popup_7d89d278f86cc528dbf1e0d51b0b1c73)
+        ;
+
+        
+    
+    
+            marker_1b0243d1e2cc6f85570dfd6aec576d8e.bindTooltip(
+                `<div>
+                     THE LEE LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_529ab2a8f74b28119e3a88c7c0afdda6 = L.marker(
+                [42.256926486774226, -72.57687668450801],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_c8347d6a9f09c9073144caf47adb709c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_529ab2a8f74b28119e3a88c7c0afdda6.setIcon(icon_c8347d6a9f09c9073144caf47adb709c);
+        
+    
+        var popup_1aaef7ba1e86ca5dbbe4cf731dbf497f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_673d514486d1efed6576ab24586e0792 = $(`<div id="html_673d514486d1efed6576ab24586e0792" style="width: 100.0%; height: 100.0%;"><b>Name:</b> GAYLORD MEMORIAL LIBRARY</div>`)[0];
+                popup_1aaef7ba1e86ca5dbbe4cf731dbf497f.setContent(html_673d514486d1efed6576ab24586e0792);
+            
+        
+
+        marker_529ab2a8f74b28119e3a88c7c0afdda6.bindPopup(popup_1aaef7ba1e86ca5dbbe4cf731dbf497f)
+        ;
+
+        
+    
+    
+            marker_529ab2a8f74b28119e3a88c7c0afdda6.bindTooltip(
+                `<div>
+                     GAYLORD MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3acd626dabcb25c462d853487809692 = L.marker(
+                [42.360518916843894, -73.38057198229909],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_51d8adb7b1680ee6509d9767acfe0cf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a3acd626dabcb25c462d853487809692.setIcon(icon_51d8adb7b1680ee6509d9767acfe0cf2);
+        
+    
+        var popup_cb9e86f97f456ea7dec634c7e5e91610 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82b6b822f12d3f439c5b3453e18ff55e = $(`<div id="html_82b6b822f12d3f439c5b3453e18ff55e" style="width: 100.0%; height: 100.0%;"><b>Name:</b> RICHMOND FREE PUBLIC LIBRARY</div>`)[0];
+                popup_cb9e86f97f456ea7dec634c7e5e91610.setContent(html_82b6b822f12d3f439c5b3453e18ff55e);
+            
+        
+
+        marker_a3acd626dabcb25c462d853487809692.bindPopup(popup_cb9e86f97f456ea7dec634c7e5e91610)
+        ;
+
+        
+    
+    
+            marker_a3acd626dabcb25c462d853487809692.bindTooltip(
+                `<div>
+                     RICHMOND FREE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26aa62ece8d83d037eedd6c455c61421 = L.marker(
+                [42.51685957218975, -72.91222878171062],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_d4e024ff4c240c294fcbf97427bf709b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_26aa62ece8d83d037eedd6c455c61421.setIcon(icon_d4e024ff4c240c294fcbf97427bf709b);
+        
+    
+        var popup_d0174270a3e6220392f17b0febfe8f09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67e5fa09113de85008842d561a4987fb = $(`<div id="html_67e5fa09113de85008842d561a4987fb" style="width: 100.0%; height: 100.0%;"><b>Name:</b> SHAW MEMORIAL LIBRARY</div>`)[0];
+                popup_d0174270a3e6220392f17b0febfe8f09.setContent(html_67e5fa09113de85008842d561a4987fb);
+            
+        
+
+        marker_26aa62ece8d83d037eedd6c455c61421.bindPopup(popup_d0174270a3e6220392f17b0febfe8f09)
+        ;
+
+        
+    
+    
+            marker_26aa62ece8d83d037eedd6c455c61421.bindTooltip(
+                `<div>
+                     SHAW MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a10a32adf3c74b2dc65a86cccde9ada = L.marker(
+                [42.2138358576665, -72.81711615918208],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_2a4b395530481314a938bbc137275a41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4a10a32adf3c74b2dc65a86cccde9ada.setIcon(icon_2a4b395530481314a938bbc137275a41);
+        
+    
+        var popup_a3f66266f699df623cab63907afe9b3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9a56d5382dc09e8ed8d4ddc255fd083 = $(`<div id="html_f9a56d5382dc09e8ed8d4ddc255fd083" style="width: 100.0%; height: 100.0%;"><b>Name:</b> GRACE HALL MEMORIAL LIBRARY</div>`)[0];
+                popup_a3f66266f699df623cab63907afe9b3d.setContent(html_f9a56d5382dc09e8ed8d4ddc255fd083);
+            
+        
+
+        marker_4a10a32adf3c74b2dc65a86cccde9ada.bindPopup(popup_a3f66266f699df623cab63907afe9b3d)
+        ;
+
+        
+    
+    
+            marker_4a10a32adf3c74b2dc65a86cccde9ada.bindTooltip(
+                `<div>
+                     GRACE HALL MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01dc73050c6eb53bb3804f763bc443fe = L.marker(
+                [42.59128455007999, -72.79285906248231],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_0bf1f1bc2617a730d184cdb5fe8be514 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_01dc73050c6eb53bb3804f763bc443fe.setIcon(icon_0bf1f1bc2617a730d184cdb5fe8be514);
+        
+    
+        var popup_163cf8afbc2f7a71ad80c1d97293ef69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b39445fe248f044124be909365c03d7 = $(`<div id="html_7b39445fe248f044124be909365c03d7" style="width: 100.0%; height: 100.0%;"><b>Name:</b> BUCKLAND PUBLIC LIBRARY</div>`)[0];
+                popup_163cf8afbc2f7a71ad80c1d97293ef69.setContent(html_7b39445fe248f044124be909365c03d7);
+            
+        
+
+        marker_01dc73050c6eb53bb3804f763bc443fe.bindPopup(popup_163cf8afbc2f7a71ad80c1d97293ef69)
+        ;
+
+        
+    
+    
+            marker_01dc73050c6eb53bb3804f763bc443fe.bindTooltip(
+                `<div>
+                     BUCKLAND PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ba4225d650896fd247cb08bb100935b = L.marker(
+                [42.461153991726924, -72.49775349212419],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_ee96c9e3ea76ca6859b8df7be11881c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8ba4225d650896fd247cb08bb100935b.setIcon(icon_ee96c9e3ea76ca6859b8df7be11881c9);
+        
+    
+        var popup_3c9030b02d9eabd82d705e8e2ce481e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cb9ccc6b8df3f4f00eeb79fd43fa736 = $(`<div id="html_4cb9ccc6b8df3f4f00eeb79fd43fa736" style="width: 100.0%; height: 100.0%;"><b>Name:</b> LEVERETT LIBRARY</div>`)[0];
+                popup_3c9030b02d9eabd82d705e8e2ce481e1.setContent(html_4cb9ccc6b8df3f4f00eeb79fd43fa736);
+            
+        
+
+        marker_8ba4225d650896fd247cb08bb100935b.bindPopup(popup_3c9030b02d9eabd82d705e8e2ce481e1)
+        ;
+
+        
+    
+    
+            marker_8ba4225d650896fd247cb08bb100935b.bindTooltip(
+                `<div>
+                     LEVERETT LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad34ab58f90350cffa0fbc8c82b8e698 = L.marker(
+                [42.21514050586422, -72.60147801100325],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_40d9764c24aa6f2420e07189ba0872ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ad34ab58f90350cffa0fbc8c82b8e698.setIcon(icon_40d9764c24aa6f2420e07189ba0872ab);
+        
+    
+        var popup_a515adfea1c76d5298cecefe8adbaa17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bad6fecf086dbfda7e52a552ba0780b8 = $(`<div id="html_bad6fecf086dbfda7e52a552ba0780b8" style="width: 100.0%; height: 100.0%;"><b>Name:</b> SOUTH HADLEY PUBLIC LIBRARY</div>`)[0];
+                popup_a515adfea1c76d5298cecefe8adbaa17.setContent(html_bad6fecf086dbfda7e52a552ba0780b8);
+            
+        
+
+        marker_ad34ab58f90350cffa0fbc8c82b8e698.bindPopup(popup_a515adfea1c76d5298cecefe8adbaa17)
+        ;
+
+        
+    
+    
+            marker_ad34ab58f90350cffa0fbc8c82b8e698.bindTooltip(
+                `<div>
+                     SOUTH HADLEY PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cf0e825bff582328a66c4a216f7ccbe = L.marker(
+                [42.37820254862994, -72.46900524809966],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_99adb34140d44a4bc86e58a7be5e8581 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1cf0e825bff582328a66c4a216f7ccbe.setIcon(icon_99adb34140d44a4bc86e58a7be5e8581);
+        
+    
+        var popup_696e1c14873db9b84b66fdd69e9f1f5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_820c3e258bc1e6aad813cb1bd3db1019 = $(`<div id="html_820c3e258bc1e6aad813cb1bd3db1019" style="width: 100.0%; height: 100.0%;"><b>Name:</b> PELHAM LIBRARY</div>`)[0];
+                popup_696e1c14873db9b84b66fdd69e9f1f5a.setContent(html_820c3e258bc1e6aad813cb1bd3db1019);
+            
+        
+
+        marker_1cf0e825bff582328a66c4a216f7ccbe.bindPopup(popup_696e1c14873db9b84b66fdd69e9f1f5a)
+        ;
+
+        
+    
+    
+            marker_1cf0e825bff582328a66c4a216f7ccbe.bindTooltip(
+                `<div>
+                     PELHAM LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fbab77f18554655b8946c53585243b0 = L.marker(
+                [42.1218649038544, -72.42860827102838],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_19538cbd5ca3f5dac222b2ea5988d03f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4fbab77f18554655b8946c53585243b0.setIcon(icon_19538cbd5ca3f5dac222b2ea5988d03f);
+        
+    
+        var popup_220e0a69abbf8fb9c6c80bf8a8e648a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fccd7e20b60ca44cc2a9d5de6fbfbb46 = $(`<div id="html_fccd7e20b60ca44cc2a9d5de6fbfbb46" style="width: 100.0%; height: 100.0%;"><b>Name:</b> WILBRAHAM PUBLIC LIBRARY</div>`)[0];
+                popup_220e0a69abbf8fb9c6c80bf8a8e648a0.setContent(html_fccd7e20b60ca44cc2a9d5de6fbfbb46);
+            
+        
+
+        marker_4fbab77f18554655b8946c53585243b0.bindPopup(popup_220e0a69abbf8fb9c6c80bf8a8e648a0)
+        ;
+
+        
+    
+    
+            marker_4fbab77f18554655b8946c53585243b0.bindTooltip(
+                `<div>
+                     WILBRAHAM PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_123ba481c4b16402d080f2a41fd66ced = L.marker(
+                [42.520138223422535, -73.22831083574052],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_db05e977c43527fd61d743bf258f0516 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_123ba481c4b16402d080f2a41fd66ced.setIcon(icon_db05e977c43527fd61d743bf258f0516);
+        
+    
+        var popup_4ab39a8282d3ba839520d02c8b0a35d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36d6c62e9ba585d48e3af68056d09fcd = $(`<div id="html_36d6c62e9ba585d48e3af68056d09fcd" style="width: 100.0%; height: 100.0%;"><b>Name:</b> LANESBOROUGH PUBLIC LIBRARY</div>`)[0];
+                popup_4ab39a8282d3ba839520d02c8b0a35d6.setContent(html_36d6c62e9ba585d48e3af68056d09fcd);
+            
+        
+
+        marker_123ba481c4b16402d080f2a41fd66ced.bindPopup(popup_4ab39a8282d3ba839520d02c8b0a35d6)
+        ;
+
+        
+    
+    
+            marker_123ba481c4b16402d080f2a41fd66ced.bindTooltip(
+                `<div>
+                     LANESBOROUGH PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31b48c2960e0745bafb98712ebca39e4 = L.marker(
+                [42.47957389190394, -72.60666669134943],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_9093ad07560a479953db2383cd122ab3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_31b48c2960e0745bafb98712ebca39e4.setIcon(icon_9093ad07560a479953db2383cd122ab3);
+        
+    
+        var popup_2dccdfa102235a848568d40e8be211b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5557425c0e3e7f4dad892be0fc887153 = $(`<div id="html_5557425c0e3e7f4dad892be0fc887153" style="width: 100.0%; height: 100.0%;"><b>Name:</b> TILTON LIBRARY</div>`)[0];
+                popup_2dccdfa102235a848568d40e8be211b5.setContent(html_5557425c0e3e7f4dad892be0fc887153);
+            
+        
+
+        marker_31b48c2960e0745bafb98712ebca39e4.bindPopup(popup_2dccdfa102235a848568d40e8be211b5)
+        ;
+
+        
+    
+    
+            marker_31b48c2960e0745bafb98712ebca39e4.bindTooltip(
+                `<div>
+                     TILTON LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3c1ad92306f9cdf7f87593c10ef0578 = L.marker(
+                [42.63408372513227, -72.25926055173987],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_8bd70e99fe761576cc0c22700d431dab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f3c1ad92306f9cdf7f87593c10ef0578.setIcon(icon_8bd70e99fe761576cc0c22700d431dab);
+        
+    
+        var popup_deded81dccd249fb56714c2267aac478 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6d335ce843f4fa1831b731206603568 = $(`<div id="html_a6d335ce843f4fa1831b731206603568" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MOORE-LELAND LIBRARY</div>`)[0];
+                popup_deded81dccd249fb56714c2267aac478.setContent(html_a6d335ce843f4fa1831b731206603568);
+            
+        
+
+        marker_f3c1ad92306f9cdf7f87593c10ef0578.bindPopup(popup_deded81dccd249fb56714c2267aac478)
+        ;
+
+        
+    
+    
+            marker_f3c1ad92306f9cdf7f87593c10ef0578.bindTooltip(
+                `<div>
+                     MOORE-LELAND LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_415939e7b04d57135cb71db1cb54e957 = L.marker(
+                [42.073193939216345, -72.64330377415169],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_477273b6344d0f2c89d23dae3612d6a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_415939e7b04d57135cb71db1cb54e957.setIcon(icon_477273b6344d0f2c89d23dae3612d6a1);
+        
+    
+        var popup_611264b9647bd2374382921cfad4bc6b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47cdebf8457cdc739a4fb0fb508b2a3f = $(`<div id="html_47cdebf8457cdc739a4fb0fb508b2a3f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> AGAWAM PUBLIC LIBRARY</div>`)[0];
+                popup_611264b9647bd2374382921cfad4bc6b.setContent(html_47cdebf8457cdc739a4fb0fb508b2a3f);
+            
+        
+
+        marker_415939e7b04d57135cb71db1cb54e957.bindPopup(popup_611264b9647bd2374382921cfad4bc6b)
+        ;
+
+        
+    
+    
+            marker_415939e7b04d57135cb71db1cb54e957.bindTooltip(
+                `<div>
+                     AGAWAM PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9401c0785d42941652543caa24a9f765 = L.marker(
+                [42.22637263702739, -72.72614101191685],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_0a14b05741877c1b764c886e40f53c35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9401c0785d42941652543caa24a9f765.setIcon(icon_0a14b05741877c1b764c886e40f53c35);
+        
+    
+        var popup_50f75de125daa4ef44616a8a1273c56d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27860fd9139456efaa6bbe4faf064981 = $(`<div id="html_27860fd9139456efaa6bbe4faf064981" style="width: 100.0%; height: 100.0%;"><b>Name:</b> EDWARDS PUBLIC LIBRARY</div>`)[0];
+                popup_50f75de125daa4ef44616a8a1273c56d.setContent(html_27860fd9139456efaa6bbe4faf064981);
+            
+        
+
+        marker_9401c0785d42941652543caa24a9f765.bindPopup(popup_50f75de125daa4ef44616a8a1273c56d)
+        ;
+
+        
+    
+    
+            marker_9401c0785d42941652543caa24a9f765.bindTooltip(
+                `<div>
+                     EDWARDS PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d1a6a51fe2152a20f23e90e5f25fa8b = L.marker(
+                [42.53565593355121, -72.53274905977038],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_3b2d254e600ae6e8e22e550fe887aca2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5d1a6a51fe2152a20f23e90e5f25fa8b.setIcon(icon_3b2d254e600ae6e8e22e550fe887aca2);
+        
+    
+        var popup_63bf9598b97babf7368b7d88dd33ecdd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed2bde7c37aa9c1e45d56fc5ca273766 = $(`<div id="html_ed2bde7c37aa9c1e45d56fc5ca273766" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MONTAGUE CENTER LIBRARY</div>`)[0];
+                popup_63bf9598b97babf7368b7d88dd33ecdd.setContent(html_ed2bde7c37aa9c1e45d56fc5ca273766);
+            
+        
+
+        marker_5d1a6a51fe2152a20f23e90e5f25fa8b.bindPopup(popup_63bf9598b97babf7368b7d88dd33ecdd)
+        ;
+
+        
+    
+    
+            marker_5d1a6a51fe2152a20f23e90e5f25fa8b.bindTooltip(
+                `<div>
+                     MONTAGUE CENTER LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2baf0f762b7795be04b821c4901adbd9 = L.marker(
+                [42.11703903843732, -72.49776805148137],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_e2a23fd45dbe01690784fb9f889c2bd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2baf0f762b7795be04b821c4901adbd9.setIcon(icon_e2a23fd45dbe01690784fb9f889c2bd6);
+        
+    
+        var popup_17deb99441186b1a93b7d9a7428cd7e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fac88fe7b85bf356ee8f38d5b3a9ee37 = $(`<div id="html_fac88fe7b85bf356ee8f38d5b3a9ee37" style="width: 100.0%; height: 100.0%;"><b>Name:</b> SIXTEEN ACRES BRANCH LIBRARY</div>`)[0];
+                popup_17deb99441186b1a93b7d9a7428cd7e6.setContent(html_fac88fe7b85bf356ee8f38d5b3a9ee37);
+            
+        
+
+        marker_2baf0f762b7795be04b821c4901adbd9.bindPopup(popup_17deb99441186b1a93b7d9a7428cd7e6)
+        ;
+
+        
+    
+    
+            marker_2baf0f762b7795be04b821c4901adbd9.bindTooltip(
+                `<div>
+                     SIXTEEN ACRES BRANCH LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_194bf82f6623afadebdd426c6fcd361b = L.marker(
+                [42.46501750391442, -72.90598632099405],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_fe8e92047374756d235321ff359c0773 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_194bf82f6623afadebdd426c6fcd361b.setIcon(icon_fe8e92047374756d235321ff359c0773);
+        
+    
+        var popup_06e9f533ea85324ceead1cba35f57347 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ca82c74abf564a0e8655ee37d3628f1 = $(`<div id="html_8ca82c74abf564a0e8655ee37d3628f1" style="width: 100.0%; height: 100.0%;"><b>Name:</b> BRYANT FREE LIBRARY</div>`)[0];
+                popup_06e9f533ea85324ceead1cba35f57347.setContent(html_8ca82c74abf564a0e8655ee37d3628f1);
+            
+        
+
+        marker_194bf82f6623afadebdd426c6fcd361b.bindPopup(popup_06e9f533ea85324ceead1cba35f57347)
+        ;
+
+        
+    
+    
+            marker_194bf82f6623afadebdd426c6fcd361b.bindTooltip(
+                `<div>
+                     BRYANT FREE LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34cb6d499275c6f97cd6afac2f665b81 = L.marker(
+                [42.17917366923118, -72.92427231831958],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_97946af55470e5e049010d01b6a8d259 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_34cb6d499275c6f97cd6afac2f665b81.setIcon(icon_97946af55470e5e049010d01b6a8d259);
+        
+    
+        var popup_10ab2a4a3f74aed76c6b84f6677dcf93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccad446847a87d9fad34deebd253c01b = $(`<div id="html_ccad446847a87d9fad34deebd253c01b" style="width: 100.0%; height: 100.0%;"><b>Name:</b> PORTER MEMORIAL LIBRARY</div>`)[0];
+                popup_10ab2a4a3f74aed76c6b84f6677dcf93.setContent(html_ccad446847a87d9fad34deebd253c01b);
+            
+        
+
+        marker_34cb6d499275c6f97cd6afac2f665b81.bindPopup(popup_10ab2a4a3f74aed76c6b84f6677dcf93)
+        ;
+
+        
+    
+    
+            marker_34cb6d499275c6f97cd6afac2f665b81.bindTooltip(
+                `<div>
+                     PORTER MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18a4f4ff3e7ac97e3dfe85dc00c58ee3 = L.marker(
+                [42.33611569245814, -73.3742060370234],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_d41a6d1964f01aefc588276e6675a71d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_18a4f4ff3e7ac97e3dfe85dc00c58ee3.setIcon(icon_d41a6d1964f01aefc588276e6675a71d);
+        
+    
+        var popup_ab4c6e82f1fe11df92da822e04500e78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bd68e3939207c520affc7fcab237483 = $(`<div id="html_9bd68e3939207c520affc7fcab237483" style="width: 100.0%; height: 100.0%;"><b>Name:</b> WEST STOCKBRIDGE PUBLIC LIBRARY</div>`)[0];
+                popup_ab4c6e82f1fe11df92da822e04500e78.setContent(html_9bd68e3939207c520affc7fcab237483);
+            
+        
+
+        marker_18a4f4ff3e7ac97e3dfe85dc00c58ee3.bindPopup(popup_ab4c6e82f1fe11df92da822e04500e78)
+        ;
+
+        
+    
+    
+            marker_18a4f4ff3e7ac97e3dfe85dc00c58ee3.bindTooltip(
+                `<div>
+                     WEST STOCKBRIDGE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66598985911e719c3fe72ba63932d50e = L.marker(
+                [42.15815681713182, -72.48429581913409],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_2e4bdb5dcec60a360223f977a19d58cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_66598985911e719c3fe72ba63932d50e.setIcon(icon_2e4bdb5dcec60a360223f977a19d58cf);
+        
+    
+        var popup_45101c7543f373fe6c4bdabea83b1eef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_401c2952cbc289e93990c94e23613d55 = $(`<div id="html_401c2952cbc289e93990c94e23613d55" style="width: 100.0%; height: 100.0%;"><b>Name:</b> HUBBARD MEMORIAL LIBRARY</div>`)[0];
+                popup_45101c7543f373fe6c4bdabea83b1eef.setContent(html_401c2952cbc289e93990c94e23613d55);
+            
+        
+
+        marker_66598985911e719c3fe72ba63932d50e.bindPopup(popup_45101c7543f373fe6c4bdabea83b1eef)
+        ;
+
+        
+    
+    
+            marker_66598985911e719c3fe72ba63932d50e.bindTooltip(
+                `<div>
+                     HUBBARD MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a301f2b5e9608adabdace1d7499d92bf = L.marker(
+                [42.44150407080774, -72.79973237847663],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_3d526c1220227c861e1a8e863133f536 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a301f2b5e9608adabdace1d7499d92bf.setIcon(icon_3d526c1220227c861e1a8e863133f536);
+        
+    
+        var popup_0c4a37522bdcc560ef0be7a6f814fe4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b18bb23649a8248012e84d67c193a343 = $(`<div id="html_b18bb23649a8248012e84d67c193a343" style="width: 100.0%; height: 100.0%;"><b>Name:</b> GOSHEN FREE PUBLIC LIBRARY</div>`)[0];
+                popup_0c4a37522bdcc560ef0be7a6f814fe4e.setContent(html_b18bb23649a8248012e84d67c193a343);
+            
+        
+
+        marker_a301f2b5e9608adabdace1d7499d92bf.bindPopup(popup_0c4a37522bdcc560ef0be7a6f814fe4e)
+        ;
+
+        
+    
+    
+            marker_a301f2b5e9608adabdace1d7499d92bf.bindTooltip(
+                `<div>
+                     GOSHEN FREE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c7f2f3c78eeeae03a3c7143890dbdff = L.marker(
+                [42.126327718299414, -72.53347164727901],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_3cdbdbbf657a40a6f77bc8df23786a45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1c7f2f3c78eeeae03a3c7143890dbdff.setIcon(icon_3cdbdbbf657a40a6f77bc8df23786a45);
+        
+    
+        var popup_dc27d51914d9fe10c0305c177b0504bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0754f04d608b24566876bca8a7aba8f1 = $(`<div id="html_0754f04d608b24566876bca8a7aba8f1" style="width: 100.0%; height: 100.0%;"><b>Name:</b> LIBERTY EXPRESS AT PINE POINT BRANCH LIBRARY</div>`)[0];
+                popup_dc27d51914d9fe10c0305c177b0504bb.setContent(html_0754f04d608b24566876bca8a7aba8f1);
+            
+        
+
+        marker_1c7f2f3c78eeeae03a3c7143890dbdff.bindPopup(popup_dc27d51914d9fe10c0305c177b0504bb)
+        ;
+
+        
+    
+    
+            marker_1c7f2f3c78eeeae03a3c7143890dbdff.bindTooltip(
+                `<div>
+                     LIBERTY EXPRESS AT PINE POINT BRANCH LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b40d9d9e5f999c87305caa23125adfc = L.marker(
+                [42.10831053214735, -73.3528657972681],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_f0c96487158f4c6a7dd0ee927dafdf90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7b40d9d9e5f999c87305caa23125adfc.setIcon(icon_f0c96487158f4c6a7dd0ee927dafdf90);
+        
+    
+        var popup_13d5ca79a8ce1b0f24159e53122459e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cbb34460476ca9fd4168e3be5bb7272 = $(`<div id="html_4cbb34460476ca9fd4168e3be5bb7272" style="width: 100.0%; height: 100.0%;"><b>Name:</b> BUSHNELL-SAGE LIBRARY</div>`)[0];
+                popup_13d5ca79a8ce1b0f24159e53122459e7.setContent(html_4cbb34460476ca9fd4168e3be5bb7272);
+            
+        
+
+        marker_7b40d9d9e5f999c87305caa23125adfc.bindPopup(popup_13d5ca79a8ce1b0f24159e53122459e7)
+        ;
+
+        
+    
+    
+            marker_7b40d9d9e5f999c87305caa23125adfc.bindTooltip(
+                `<div>
+                     BUSHNELL-SAGE LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c3947f4289a4f8d9074be3cb55e7830 = L.marker(
+                [42.103431031889215, -72.58478522323423],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_10bcc14937bdbf2ceb0e1283ed162578 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1c3947f4289a4f8d9074be3cb55e7830.setIcon(icon_10bcc14937bdbf2ceb0e1283ed162578);
+        
+    
+        var popup_00a8c7bdfff3afaad4a8665c0f8fcd1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3627804948cc48fafede15216e91281f = $(`<div id="html_3627804948cc48fafede15216e91281f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> SPRINGFIELD CITY LIBRARY</div>`)[0];
+                popup_00a8c7bdfff3afaad4a8665c0f8fcd1c.setContent(html_3627804948cc48fafede15216e91281f);
+            
+        
+
+        marker_1c3947f4289a4f8d9074be3cb55e7830.bindPopup(popup_00a8c7bdfff3afaad4a8665c0f8fcd1c)
+        ;
+
+        
+    
+    
+            marker_1c3947f4289a4f8d9074be3cb55e7830.bindTooltip(
+                `<div>
+                     SPRINGFIELD CITY LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86d03be43458fbcf66e57731df00bdaf = L.marker(
+                [42.279068633813466, -72.98298642389109],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_1bf9cfab4f326711c4ca7af0c82758de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_86d03be43458fbcf66e57731df00bdaf.setIcon(icon_1bf9cfab4f326711c4ca7af0c82758de);
+        
+    
+        var popup_c15643d33499aa4870255a5b46febdd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9d66d85427f27dbe2cfe927d8817da3 = $(`<div id="html_e9d66d85427f27dbe2cfe927d8817da3" style="width: 100.0%; height: 100.0%;"><b>Name:</b> HAMILTON MEMORIAL LIBRARY</div>`)[0];
+                popup_c15643d33499aa4870255a5b46febdd9.setContent(html_e9d66d85427f27dbe2cfe927d8817da3);
+            
+        
+
+        marker_86d03be43458fbcf66e57731df00bdaf.bindPopup(popup_c15643d33499aa4870255a5b46febdd9)
+        ;
+
+        
+    
+    
+            marker_86d03be43458fbcf66e57731df00bdaf.bindTooltip(
+                `<div>
+                     HAMILTON MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65e2d1c1ff781fb198fa99bd1187da9a = L.marker(
+                [42.23486011021686, -72.87616710459099],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_c105c98e11b76b6acdb36136145de94b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_65e2d1c1ff781fb198fa99bd1187da9a.setIcon(icon_c105c98e11b76b6acdb36136145de94b);
+        
+    
+        var popup_e7ba136d0332532ab6ad4eca2265b4a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90f357fb2fff736788792de982ff6227 = $(`<div id="html_90f357fb2fff736788792de982ff6227" style="width: 100.0%; height: 100.0%;"><b>Name:</b> HUNTINGTON PUBLIC LIBRARY</div>`)[0];
+                popup_e7ba136d0332532ab6ad4eca2265b4a0.setContent(html_90f357fb2fff736788792de982ff6227);
+            
+        
+
+        marker_65e2d1c1ff781fb198fa99bd1187da9a.bindPopup(popup_e7ba136d0332532ab6ad4eca2265b4a0)
+        ;
+
+        
+    
+    
+            marker_65e2d1c1ff781fb198fa99bd1187da9a.bindTooltip(
+                `<div>
+                     HUNTINGTON PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a73ab083428d66a4e0a6089aa2563b24 = L.marker(
+                [42.33557880512943, -72.67414106950197],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_a88c09439bd2eb381495da8189eb42ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a73ab083428d66a4e0a6089aa2563b24.setIcon(icon_a88c09439bd2eb381495da8189eb42ca);
+        
+    
+        var popup_7c853ad018257c0fc30eeda52eac8a11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1783191fb616cb16b1d9f89ef9a3f307 = $(`<div id="html_1783191fb616cb16b1d9f89ef9a3f307" style="width: 100.0%; height: 100.0%;"><b>Name:</b> LILLY LIBRARY</div>`)[0];
+                popup_7c853ad018257c0fc30eeda52eac8a11.setContent(html_1783191fb616cb16b1d9f89ef9a3f307);
+            
+        
+
+        marker_a73ab083428d66a4e0a6089aa2563b24.bindPopup(popup_7c853ad018257c0fc30eeda52eac8a11)
+        ;
+
+        
+    
+    
+            marker_a73ab083428d66a4e0a6089aa2563b24.bindTooltip(
+                `<div>
+                     LILLY LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7882ecee73ce7f54b55edc2cc20002a2 = L.marker(
+                [42.41083758371631, -72.53102261098897],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_915f44b870afce89896c166b3871bae4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7882ecee73ce7f54b55edc2cc20002a2.setIcon(icon_915f44b870afce89896c166b3871bae4);
+        
+    
+        var popup_fa84e02406590259642485388f3aa0aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4eaf8127298266cec002db796f70fe61 = $(`<div id="html_4eaf8127298266cec002db796f70fe61" style="width: 100.0%; height: 100.0%;"><b>Name:</b> NORTH AMHERST LIBRARY</div>`)[0];
+                popup_fa84e02406590259642485388f3aa0aa.setContent(html_4eaf8127298266cec002db796f70fe61);
+            
+        
+
+        marker_7882ecee73ce7f54b55edc2cc20002a2.bindPopup(popup_fa84e02406590259642485388f3aa0aa)
+        ;
+
+        
+    
+    
+            marker_7882ecee73ce7f54b55edc2cc20002a2.bindTooltip(
+                `<div>
+                     NORTH AMHERST LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9ff52c6c5952bea33a0c82c35bd195e = L.marker(
+                [42.713092571978876, -73.21169955715956],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_54b32a732de5096ae505985198ee0416 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a9ff52c6c5952bea33a0c82c35bd195e.setIcon(icon_54b32a732de5096ae505985198ee0416);
+        
+    
+        var popup_72d8fd358a460cc1455405193880471c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee374600058e448e6fa73ab1e8a53586 = $(`<div id="html_ee374600058e448e6fa73ab1e8a53586" style="width: 100.0%; height: 100.0%;"><b>Name:</b> DAVID AND JOYCE MILNE PUBLIC LIBRARY</div>`)[0];
+                popup_72d8fd358a460cc1455405193880471c.setContent(html_ee374600058e448e6fa73ab1e8a53586);
+            
+        
+
+        marker_a9ff52c6c5952bea33a0c82c35bd195e.bindPopup(popup_72d8fd358a460cc1455405193880471c)
+        ;
+
+        
+    
+    
+            marker_a9ff52c6c5952bea33a0c82c35bd195e.bindTooltip(
+                `<div>
+                     DAVID AND JOYCE MILNE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf1fa60e52bb5342ff0a59e7f04c3b90 = L.marker(
+                [42.25814597293181, -73.36538252495494],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_db0b737f572b0aa29a6af19c015074bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cf1fa60e52bb5342ff0a59e7f04c3b90.setIcon(icon_db0b737f572b0aa29a6af19c015074bc);
+        
+    
+        var popup_b16d5597292ca5dc429c5e2b3c7389a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_601d88ef7025597135c6f7aba6e98a01 = $(`<div id="html_601d88ef7025597135c6f7aba6e98a01" style="width: 100.0%; height: 100.0%;"><b>Name:</b> RAMSDELL PUBLIC LIBRARY</div>`)[0];
+                popup_b16d5597292ca5dc429c5e2b3c7389a0.setContent(html_601d88ef7025597135c6f7aba6e98a01);
+            
+        
+
+        marker_cf1fa60e52bb5342ff0a59e7f04c3b90.bindPopup(popup_b16d5597292ca5dc429c5e2b3c7389a0)
+        ;
+
+        
+    
+    
+            marker_cf1fa60e52bb5342ff0a59e7f04c3b90.bindTooltip(
+                `<div>
+                     RAMSDELL PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a1c019e23e1e8d6b13414239c3cebbc = L.marker(
+                [42.09704122950821, -72.5520327278604],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_38ac04fdfa26534ff03098abd3d4c763 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7a1c019e23e1e8d6b13414239c3cebbc.setIcon(icon_38ac04fdfa26534ff03098abd3d4c763);
+        
+    
+        var popup_9fa31dbd8d78f2d21f82f3c25a72209d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c190a42a022b37d2868dc4de40b07254 = $(`<div id="html_c190a42a022b37d2868dc4de40b07254" style="width: 100.0%; height: 100.0%;"><b>Name:</b> EAST FOREST PARK BRANCH LIBRARY</div>`)[0];
+                popup_9fa31dbd8d78f2d21f82f3c25a72209d.setContent(html_c190a42a022b37d2868dc4de40b07254);
+            
+        
+
+        marker_7a1c019e23e1e8d6b13414239c3cebbc.bindPopup(popup_9fa31dbd8d78f2d21f82f3c25a72209d)
+        ;
+
+        
+    
+    
+            marker_7a1c019e23e1e8d6b13414239c3cebbc.bindTooltip(
+                `<div>
+                     EAST FOREST PARK BRANCH LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b93aef5282785a896e35b4281fe44b2c = L.marker(
+                [42.063993769904876, -72.747778002472],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_c5d5dd88f4a91da125dde5bcd39fe3c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b93aef5282785a896e35b4281fe44b2c.setIcon(icon_c5d5dd88f4a91da125dde5bcd39fe3c4);
+        
+    
+        var popup_f2626683785dd2be015607801372dd9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68d571d09c3f294879d9e1ae993feb47 = $(`<div id="html_68d571d09c3f294879d9e1ae993feb47" style="width: 100.0%; height: 100.0%;"><b>Name:</b> SOUTHWICK PUBLIC LIBRARY</div>`)[0];
+                popup_f2626683785dd2be015607801372dd9a.setContent(html_68d571d09c3f294879d9e1ae993feb47);
+            
+        
+
+        marker_b93aef5282785a896e35b4281fe44b2c.bindPopup(popup_f2626683785dd2be015607801372dd9a)
+        ;
+
+        
+    
+    
+            marker_b93aef5282785a896e35b4281fe44b2c.bindTooltip(
+                `<div>
+                     SOUTHWICK PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95f0dbc0f389455d9bd9bbc32c01a4db = L.marker(
+                [42.673748086794006, -72.82173335257157],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_69f469e1458e469b0a47f654b8b70b53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_95f0dbc0f389455d9bd9bbc32c01a4db.setIcon(icon_69f469e1458e469b0a47f654b8b70b53);
+        
+    
+        var popup_ccdd623ad1d8b722d55a8328e2e886c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f5c9e2f77b5ea2f5800876e55823bb2 = $(`<div id="html_4f5c9e2f77b5ea2f5800876e55823bb2" style="width: 100.0%; height: 100.0%;"><b>Name:</b> HEATH FREE PUBLIC LIBRARY</div>`)[0];
+                popup_ccdd623ad1d8b722d55a8328e2e886c8.setContent(html_4f5c9e2f77b5ea2f5800876e55823bb2);
+            
+        
+
+        marker_95f0dbc0f389455d9bd9bbc32c01a4db.bindPopup(popup_ccdd623ad1d8b722d55a8328e2e886c8)
+        ;
+
+        
+    
+    
+            marker_95f0dbc0f389455d9bd9bbc32c01a4db.bindTooltip(
+                `<div>
+                     HEATH FREE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_163e7c4de3116d8df12d5f66ac81e1dc = L.marker(
+                [42.064855915966135, -72.51406102387834],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_b784fb8ca29f52cfa2a63e877ef1d72d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_163e7c4de3116d8df12d5f66ac81e1dc.setIcon(icon_b784fb8ca29f52cfa2a63e877ef1d72d);
+        
+    
+        var popup_1387222f9cd88acc1e5ee8be3f43d335 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29826a8e92c14a95ff4ae87ea33497ef = $(`<div id="html_29826a8e92c14a95ff4ae87ea33497ef" style="width: 100.0%; height: 100.0%;"><b>Name:</b> EAST LONGMEADOW PUBLIC LIBRARY</div>`)[0];
+                popup_1387222f9cd88acc1e5ee8be3f43d335.setContent(html_29826a8e92c14a95ff4ae87ea33497ef);
+            
+        
+
+        marker_163e7c4de3116d8df12d5f66ac81e1dc.bindPopup(popup_1387222f9cd88acc1e5ee8be3f43d335)
+        ;
+
+        
+    
+    
+            marker_163e7c4de3116d8df12d5f66ac81e1dc.bindTooltip(
+                `<div>
+                     EAST LONGMEADOW PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8d34ba9342c00e18fb3c321ac730a2c = L.marker(
+                [42.5495257517572, -72.39750373148576],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_a680833478f3ceed8279b6d4bbae1614 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e8d34ba9342c00e18fb3c321ac730a2c.setIcon(icon_a680833478f3ceed8279b6d4bbae1614);
+        
+    
+        var popup_73d3f3fe3b65a9f24c0c2aad66eeae91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_49ecd829163ad605491f5cb93aea09d6 = $(`<div id="html_49ecd829163ad605491f5cb93aea09d6" style="width: 100.0%; height: 100.0%;"><b>Name:</b> WENDELL FREE LIBRARY</div>`)[0];
+                popup_73d3f3fe3b65a9f24c0c2aad66eeae91.setContent(html_49ecd829163ad605491f5cb93aea09d6);
+            
+        
+
+        marker_e8d34ba9342c00e18fb3c321ac730a2c.bindPopup(popup_73d3f3fe3b65a9f24c0c2aad66eeae91)
+        ;
+
+        
+    
+    
+            marker_e8d34ba9342c00e18fb3c321ac730a2c.bindTooltip(
+                `<div>
+                     WENDELL FREE LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_040f5e42254ef3244f14e31531baf772 = L.marker(
+                [42.120587074541255, -72.74994337454527],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_64cfc9462bd715b58d4cca2242ca9885 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_040f5e42254ef3244f14e31531baf772.setIcon(icon_64cfc9462bd715b58d4cca2242ca9885);
+        
+    
+        var popup_5657e6a958d9aee0b2219b0153501d93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fde80eb0e3b48109848408658545e02f = $(`<div id="html_fde80eb0e3b48109848408658545e02f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> WESTFIELD ATHENAEUM</div>`)[0];
+                popup_5657e6a958d9aee0b2219b0153501d93.setContent(html_fde80eb0e3b48109848408658545e02f);
+            
+        
+
+        marker_040f5e42254ef3244f14e31531baf772.bindPopup(popup_5657e6a958d9aee0b2219b0153501d93)
+        ;
+
+        
+    
+    
+            marker_040f5e42254ef3244f14e31531baf772.bindTooltip(
+                `<div>
+                     WESTFIELD ATHENAEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6782930d40daf6ea9fba3adddba03cd6 = L.marker(
+                [42.268373627900736, -72.67442197389173],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_86b4fb55399c754e268547c531b60060 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6782930d40daf6ea9fba3adddba03cd6.setIcon(icon_86b4fb55399c754e268547c531b60060);
+        
+    
+        var popup_d55c4f3c2b78e1045d294bf3b0f6de4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0177eaadcdeae106630137dbe8f482d1 = $(`<div id="html_0177eaadcdeae106630137dbe8f482d1" style="width: 100.0%; height: 100.0%;"><b>Name:</b> EMILY WILLISTON MEMORIAL LIBRARY</div>`)[0];
+                popup_d55c4f3c2b78e1045d294bf3b0f6de4e.setContent(html_0177eaadcdeae106630137dbe8f482d1);
+            
+        
+
+        marker_6782930d40daf6ea9fba3adddba03cd6.bindPopup(popup_d55c4f3c2b78e1045d294bf3b0f6de4e)
+        ;
+
+        
+    
+    
+            marker_6782930d40daf6ea9fba3adddba03cd6.bindTooltip(
+                `<div>
+                     EMILY WILLISTON MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1faf485c1e36320bc78a1f2ce1889375 = L.marker(
+                [42.34259281765794, -72.58859504578844],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_c102e5a3a66947de0c274e6a1d125132 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1faf485c1e36320bc78a1f2ce1889375.setIcon(icon_c102e5a3a66947de0c274e6a1d125132);
+        
+    
+        var popup_d527e0c14639935f78b5cbf0614ddc64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d672ca4bd901c6fb9a0e3c639f4d48ce = $(`<div id="html_d672ca4bd901c6fb9a0e3c639f4d48ce" style="width: 100.0%; height: 100.0%;"><b>Name:</b> GOODWIN MEMORIAL LIBRARY</div>`)[0];
+                popup_d527e0c14639935f78b5cbf0614ddc64.setContent(html_d672ca4bd901c6fb9a0e3c639f4d48ce);
+            
+        
+
+        marker_1faf485c1e36320bc78a1f2ce1889375.bindPopup(popup_d527e0c14639935f78b5cbf0614ddc64)
+        ;
+
+        
+    
+    
+            marker_1faf485c1e36320bc78a1f2ce1889375.bindTooltip(
+                `<div>
+                     GOODWIN MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6949c89b5130faa5ef4d1f70b5a15652 = L.marker(
+                [42.18943486330214, -72.85297277331901],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_3ba02ec1986bb22f2af15bd54b7fea0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6949c89b5130faa5ef4d1f70b5a15652.setIcon(icon_3ba02ec1986bb22f2af15bd54b7fea0c);
+        
+    
+        var popup_2bb2a3941dab728f7bec09c4fc0cbd0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f9cf75944f3b0c2f43c81f4a750ee8a = $(`<div id="html_3f9cf75944f3b0c2f43c81f4a750ee8a" style="width: 100.0%; height: 100.0%;"><b>Name:</b> RUSSELL PUBLIC LIBRARY</div>`)[0];
+                popup_2bb2a3941dab728f7bec09c4fc0cbd0e.setContent(html_3f9cf75944f3b0c2f43c81f4a750ee8a);
+            
+        
+
+        marker_6949c89b5130faa5ef4d1f70b5a15652.bindPopup(popup_2bb2a3941dab728f7bec09c4fc0cbd0e)
+        ;
+
+        
+    
+    
+            marker_6949c89b5130faa5ef4d1f70b5a15652.bindTooltip(
+                `<div>
+                     RUSSELL PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd5addab0f295db534f00136227ab3ff = L.marker(
+                [42.682933589564605, -72.33858903573753],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_c859636b9fde59cf408fe27706a3f23f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fd5addab0f295db534f00136227ab3ff.setIcon(icon_c859636b9fde59cf408fe27706a3f23f);
+        
+    
+        var popup_cc9dc377e471755b8c3458282e8eef53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79ac7cb31f90e9ab6b619a442a289f3e = $(`<div id="html_79ac7cb31f90e9ab6b619a442a289f3e" style="width: 100.0%; height: 100.0%;"><b>Name:</b> WARWICK FREE PUBLIC LIBRARY</div>`)[0];
+                popup_cc9dc377e471755b8c3458282e8eef53.setContent(html_79ac7cb31f90e9ab6b619a442a289f3e);
+            
+        
+
+        marker_fd5addab0f295db534f00136227ab3ff.bindPopup(popup_cc9dc377e471755b8c3458282e8eef53)
+        ;
+
+        
+    
+    
+            marker_fd5addab0f295db534f00136227ab3ff.bindTooltip(
+                `<div>
+                     WARWICK FREE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74a594a113fe5aaeb44770fb2201cedb = L.marker(
+                [42.34469808408956, -73.00963221267789],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_fd997a3d594de944f5ddac2911097fce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_74a594a113fe5aaeb44770fb2201cedb.setIcon(icon_fd997a3d594de944f5ddac2911097fce);
+        
+    
+        var popup_19cbb73de3e03190edf98f6626b350b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e60a735ae0742df14e70706b3e5a96f0 = $(`<div id="html_e60a735ae0742df14e70706b3e5a96f0" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MIDDLEFIELD PUBLIC LIBRARY</div>`)[0];
+                popup_19cbb73de3e03190edf98f6626b350b6.setContent(html_e60a735ae0742df14e70706b3e5a96f0);
+            
+        
+
+        marker_74a594a113fe5aaeb44770fb2201cedb.bindPopup(popup_19cbb73de3e03190edf98f6626b350b6)
+        ;
+
+        
+    
+    
+            marker_74a594a113fe5aaeb44770fb2201cedb.bindTooltip(
+                `<div>
+                     MIDDLEFIELD PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ecb75c260882099b21d1bb3c95f7ad4 = L.marker(
+                [42.67238038324691, -72.69948279071801],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_2f776ad5812c0007bd36d1c1ee6e2da0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1ecb75c260882099b21d1bb3c95f7ad4.setIcon(icon_2f776ad5812c0007bd36d1c1ee6e2da0);
+        
+    
+        var popup_e8b8e00090bf661401ae57dc6a9f57e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfda120ab6582507fb53638b238c9673 = $(`<div id="html_dfda120ab6582507fb53638b238c9673" style="width: 100.0%; height: 100.0%;"><b>Name:</b> GRISWOLD MEMORIAL LIBRARY</div>`)[0];
+                popup_e8b8e00090bf661401ae57dc6a9f57e2.setContent(html_dfda120ab6582507fb53638b238c9673);
+            
+        
+
+        marker_1ecb75c260882099b21d1bb3c95f7ad4.bindPopup(popup_e8b8e00090bf661401ae57dc6a9f57e2)
+        ;
+
+        
+    
+    
+            marker_1ecb75c260882099b21d1bb3c95f7ad4.bindTooltip(
+                `<div>
+                     GRISWOLD MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a5af2769677d10f11e8e72118bb20f7 = L.marker(
+                [42.62849365409755, -72.87074099847082],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_ba5881ee7b030e3f381ee4d334b6dc4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8a5af2769677d10f11e8e72118bb20f7.setIcon(icon_ba5881ee7b030e3f381ee4d334b6dc4c);
+        
+    
+        var popup_4fe0c4846b4ef71d92eda00c7ffcc1f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cba273530bae5f1cabbe31f7fdb58da = $(`<div id="html_9cba273530bae5f1cabbe31f7fdb58da" style="width: 100.0%; height: 100.0%;"><b>Name:</b> TYLER MEMORIAL LIBRARY</div>`)[0];
+                popup_4fe0c4846b4ef71d92eda00c7ffcc1f4.setContent(html_9cba273530bae5f1cabbe31f7fdb58da);
+            
+        
+
+        marker_8a5af2769677d10f11e8e72118bb20f7.bindPopup(popup_4fe0c4846b4ef71d92eda00c7ffcc1f4)
+        ;
+
+        
+    
+    
+            marker_8a5af2769677d10f11e8e72118bb20f7.bindTooltip(
+                `<div>
+                     TYLER MEMORIAL LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24c75ccb02751ef601b7c58f69fe96ab = L.marker(
+                [42.30460519842129, -72.77430558138938],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_17aad6342e2e39daa79bfb6785b7c09d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_24c75ccb02751ef601b7c58f69fe96ab.setIcon(icon_17aad6342e2e39daa79bfb6785b7c09d);
+        
+    
+        var popup_8e017f935dfd58e61e83299f0be80094 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ce94f37a9bfdac727e5a501b0601a7d = $(`<div id="html_4ce94f37a9bfdac727e5a501b0601a7d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> WESTHAMPTON PUBLIC LIBRARY</div>`)[0];
+                popup_8e017f935dfd58e61e83299f0be80094.setContent(html_4ce94f37a9bfdac727e5a501b0601a7d);
+            
+        
+
+        marker_24c75ccb02751ef601b7c58f69fe96ab.bindPopup(popup_8e017f935dfd58e61e83299f0be80094)
+        ;
+
+        
+    
+    
+            marker_24c75ccb02751ef601b7c58f69fe96ab.bindTooltip(
+                `<div>
+                     WESTHAMPTON PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47a9e3d10bb69412c97aa4448c33d38b = L.marker(
+                [42.511045498485025, -73.05744817670103],
+                {}
+            ).addTo(map_5081bb4e1b8fbe96914146931c76235f);
+        
+    
+            var icon_e6c4f88925a07f00878e5e7f63148b6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book-open", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_47a9e3d10bb69412c97aa4448c33d38b.setIcon(icon_e6c4f88925a07f00878e5e7f63148b6c);
+        
+    
+        var popup_799a57fca3ceb6219a7062e43c721381 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70ca875f7c7da5264e5d156a2b26dc26 = $(`<div id="html_70ca875f7c7da5264e5d156a2b26dc26" style="width: 100.0%; height: 100.0%;"><b>Name:</b> WINDSOR FREE PUBLIC LIBRARY</div>`)[0];
+                popup_799a57fca3ceb6219a7062e43c721381.setContent(html_70ca875f7c7da5264e5d156a2b26dc26);
+            
+        
+
+        marker_47a9e3d10bb69412c97aa4448c33d38b.bindPopup(popup_799a57fca3ceb6219a7062e43c721381)
+        ;
+
+        
+    
+    
+            marker_47a9e3d10bb69412c97aa4448c33d38b.bindTooltip(
+                `<div>
+                     WINDSOR FREE PUBLIC LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
